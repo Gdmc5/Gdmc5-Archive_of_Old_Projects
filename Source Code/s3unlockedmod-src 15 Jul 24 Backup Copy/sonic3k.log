@@ -1,0 +1,224 @@
+> > > sonic3k.constants.asm(921): error #1820: expression must be evaluatable in first pass
+> > >   if dev_mode = 1
+> > > sonic3k.asm(264): warning #180: address is not properly aligned
+> > >   move.w #$4EF9,(V_int_jump).w ; machine code for jmp
+> > > sonic3k.asm(265): warning #180: address is not properly aligned
+> > >   move.l #VInt,(V_int_addr).w
+> > > sonic3k.asm(266): warning #180: address is not properly aligned
+> > >   move.w #$4EF9,(H_int_jump).w
+> > > sonic3k.asm(267): warning #180: address is not properly aligned
+> > >   move.l #HInt,(H_int_addr).w
+> > > sonic3k.asm(283): warning #180: address is not properly aligned
+> > >   cmpi.l #Ref_Checksum_String,(Checksum_string).w
+> > > sonic3k.asm(283): warning #180: address is not properly aligned
+> > >   cmpi.l #Ref_Checksum_String,(Checksum_string).w
+> > > sonic3k.asm(296): warning #180: address is not properly aligned
+> > >   move.l #Ref_Checksum_String,(Checksum_string).w
+> > > sonic3k.asm(484): warning #180: address is not properly aligned
+> > >   tst.w (Competition_mode).w
+> > > sonic3k.asm(581): warning #180: address is not properly aligned
+> > >   tst.w (Competition_mode).w
+> > > sonic3k.asm(639): warning #180: address is not properly aligned
+> > >   tst.w (Competition_mode).w
+> > > sonic3k.asm(1069): warning #180: address is not properly aligned
+> > >   tst.w (Competition_mode).w
+> > > sonic3k.asm(1250): warning #180: address is not properly aligned
+> > >   tst.w (Competition_mode).w   ; Liliam: Encore mode - add extra levels
+> > > sonic3k.asm(4779): warning #180: address is not properly aligned
+> > >   move.w #$101,(Level_select_flag).w
+> > > sonic3k.asm(4780): warning #180: address is not properly aligned
+> > >   move.w #$101,(Debug_cheat_flag).w
+> > > sonic3k.asm(4863): warning #180: address is not properly aligned
+> > >   move.w d0,(Competition_mode).w
+> > > sonic3k.asm(4869): warning #180: address is not properly aligned
+> > >   move.w d0,(Level_select_cheat_counter).w
+> > > sonic3k.asm(4870): warning #180: address is not properly aligned
+> > >   move.w d0,(Debug_mode_cheat_counter).w
+> > > sonic3k.asm(5750): warning #180: address is not properly aligned
+> > >   tst.w (Level_select_flag).w   ; Liliam: title screen - restore S3 level select code
+> > > sonic3k.asm(5757): warning #180: address is not properly aligned
+> > >   move.w (Level_select_cheat_counter).w,d0
+> > > sonic3k.asm(5765): warning #180: address is not properly aligned
+> > >   addq.w #1,(Level_select_cheat_counter).w
+> > > sonic3k.asm(5768): warning #180: address is not properly aligned
+> > >   move.w #$101,(Level_select_flag).w
+> > > sonic3k.asm(5769): warning #180: address is not properly aligned
+> > >   move.w #$101,(Debug_cheat_flag).w
+> > > sonic3k.asm(5776): warning #180: address is not properly aligned
+> > >   move.w #0,(Level_select_cheat_counter).w
+> > > sonic3k.asm(5924): warning #180: address is not properly aligned
+> > >   tst.w (Competition_mode).w   ;
+> > > sonic3k.asm(6076): warning #180: address is not properly aligned
+> > >   tst.w (Competition_mode).w
+> > > sonic3k.asm(6078): warning #180: address is not properly aligned
+> > >   move.w #$4EF9,(H_int_jump).w
+> > > sonic3k.asm(6079): warning #180: address is not properly aligned
+> > >   move.l #HInt,(H_int_addr).w
+> > > sonic3k.asm(6122): warning #180: address is not properly aligned
+> > >   tst.w (Competition_mode).w   ; Liliam: bugfix - use apparent zone for music selection
+> > > sonic3k.asm(6154): warning #180: address is not properly aligned
+> > >   tst.w (Competition_mode).w   ; Liliam: title cards - suppress for 2P mode rather than levels
+> > > sonic3k.asm(6180): warning #180: address is not properly aligned
+> > >   tst.w (Competition_mode).w   ; Liliam: bugfix - allow exiting debug in 2P mode
+> > > sonic3k.asm(6302): warning #180: address is not properly aligned
+> > >   tst.w (Competition_mode).w
+> > > sonic3k.asm(6705): warning #180: address is not properly aligned
+> > >   tst.w (Competition_mode).w   ; Liliam: Encore mode - add extra levels
+> > > sonic3k.asm(6796): warning #180: address is not properly aligned
+> > >   tst.w (Competition_mode).w
+> > > sonic3k.asm(7995): warning #180: address is not properly aligned
+> > >   tst.w (Competition_mode).w
+> > > sonic3k.asm(8287): warning #180: address is not properly aligned
+> > >   move.w #0,(Competition_mode).w
+> > > sonic3k.asm(8290): warning #180: address is not properly aligned
+> > >   move.w #$4EF9,(H_int_jump).w
+> > > sonic3k.asm(8291): warning #180: address is not properly aligned
+> > >   move.l #HInt2,(H_int_addr).w
+> > > sonic3k.asm(8294): warning #180: address is not properly aligned
+> > >   move.l #HInt3,(H_int_addr).w
+> > > sonic3k.asm(8297): warning #180: address is not properly aligned
+> > >   move.l #HInt4,(H_int_addr).w
+> > > sonic3k.asm(8416): error #1130: invalid operand size
+> > >   jmp.w LevelSelect
+> > > sonic3k.asm(8420): error #1130: invalid operand size
+> > >   jmp.s LevelSelect
+> > > sonic3k.asm(8575): warning #180: address is not properly aligned
+> > >   clr.w (Competition_mode).w
+> > > sonic3k.asm(8589): warning #180: address is not properly aligned
+> > >   clr.w (Level_select_cheat_counter).w
+> > > sonic3k.asm(8590): warning #180: address is not properly aligned
+> > >   clr.w (Debug_mode_cheat_counter).w
+> > > sonic3k.asm(9215): warning #180: address is not properly aligned
+> > >   move.w (Level_select_cheat_counter).w,d1
+> > > sonic3k.asm(9219): warning #180: address is not properly aligned
+> > >   addq.w #1,(Level_select_cheat_counter).w
+> > > sonic3k.asm(9228): warning #180: address is not properly aligned
+> > >   move.w #0,(Level_select_cheat_counter).w
+> > > sonic3k.asm(9231): warning #180: address is not properly aligned
+> > >   move.w (Debug_mode_cheat_counter).w,d1
+> > > sonic3k.asm(9235): warning #180: address is not properly aligned
+> > >   addq.w #1,(Debug_mode_cheat_counter).w
+> > > sonic3k.asm(9246): warning #180: address is not properly aligned
+> > >   move.w #0,(Debug_mode_cheat_counter).w
+> > > sonic3k.asm(12656): warning #180: address is not properly aligned
+> > >   clr.w (Competition_mode).w
+> > > sonic3k.asm(13821): warning #180: address is not properly aligned
+> > >   clr.w (Competition_mode).w
+> > > sonic3k.asm(14293): warning #180: address is not properly aligned
+> > >   clr.w (Competition_mode).w
+> > > sonic3k.asm(14765): warning #180: address is not properly aligned
+> > >   move.w #1,(Competition_mode).w
+> > > sonic3k.asm(14770): warning #180: address is not properly aligned
+> > >   clr.w (Competition_mode).w
+> > > sonic3k.asm(15256): warning #180: address is not properly aligned
+> > >   move.w #$4EF9,(H_int_jump).w    ;
+> > > sonic3k.asm(15257): warning #180: address is not properly aligned
+> > >   move.l #HInt3,(H_int_addr).w    ;
+> > > sonic3k.asm(15260): warning #180: address is not properly aligned
+> > >   move.l #HInt4,(H_int_addr).w    ;
+> > > sonic3k.asm(17039): warning #180: address is not properly aligned
+> > >   tst.w (Competition_mode).w
+> > > sonic3k.asm(19025): warning #180: address is not properly aligned
+> > >   tst.w (Competition_mode).w
+> > > sonic3k.asm(19078): warning #180: address is not properly aligned
+> > >   tst.w (Competition_mode).w
+> > > sonic3k.asm(19529): warning #180: address is not properly aligned
+> > >   tst.w (Competition_mode).w
+> > > sonic3k.asm(19861): warning #180: address is not properly aligned
+> > >   tst.w (Competition_mode).w
+> > > sonic3k.asm(20139): warning #180: address is not properly aligned
+> > >   tst.w (Competition_mode).w   ; Is the competition mode?
+> > > sonic3k.asm(20207): warning #180: address is not properly aligned
+> > >   tst.w (Competition_mode).w   ; Are we in competition mode?
+> > > sonic3k.asm(20421): warning #180: address is not properly aligned
+> > >   tst.w (Competition_mode).w
+> > > sonic3k.asm(21525): warning #180: address is not properly aligned
+> > >   tst.w (Competition_mode).w  ; is this Competition mode?
+> > > sonic3k.asm(21576): warning #180: address is not properly aligned
+> > >   tst.w (Competition_mode).w  ; are we in Competition mode?
+> > > sonic3k.asm(21637): warning #180: address is not properly aligned
+> > >   tst.w (Competition_mode).w ; are we in Competition mode?
+> > > sonic3k.asm(24089): warning #180: address is not properly aligned
+> > >   tst.w (Competition_mode).w
+> > > sonic3k.asm(24098): warning #180: address is not properly aligned
+> > >   tst.w (Competition_mode).w
+> > > sonic3k.asm(24246): warning #180: address is not properly aligned
+> > >   tst.w (Competition_mode).w
+> > > sonic3k.asm(26005): warning #180: address is not properly aligned
+> > >   tst.w (Competition_mode).w
+> > > sonic3k.asm(27451): warning #180: address is not properly aligned
+> > >   tst.w (Competition_mode).w
+> > > sonic3k.asm(29211): warning #180: address is not properly aligned
+> > >   tst.w (Competition_mode).w
+> > > sonic3k.asm(35623): warning #180: address is not properly aligned
+> > >   move.w (Encore_stocks_packed).w,d1
+> > > sonic3k.asm(36054): warning #180: address is not properly aligned
+> > >   tst.w (Competition_mode).w
+> > > sonic3k.asm(36126): warning #180: address is not properly aligned
+> > >   tst.w (Competition_mode).w
+> > > sonic3k.asm(36638): warning #180: address is not properly aligned
+> > >   tst.w (Competition_mode).w
+> > > sonic3k.asm(36696): warning #180: address is not properly aligned
+> > >   tst.w (Competition_mode).w
+> > > sonic3k.asm(37053): warning #180: address is not properly aligned
+> > >   tst.w (Competition_mode).w
+> > > sonic3k.asm(38174): warning #180: address is not properly aligned
+> > >   tst.w (Competition_mode).w
+> > > sonic3k.asm(38991): warning #180: address is not properly aligned
+> > >   tst.w (Competition_mode).w
+> > > sonic3k.asm(39032): warning #180: address is not properly aligned
+> > >   tst.w (Competition_mode).w
+> > > sonic3k.asm(39196): warning #180: address is not properly aligned
+> > >   tst.w (Competition_mode).w
+> > > sonic3k.asm(39324): warning #180: address is not properly aligned
+> > >   tst.w (Competition_mode).w
+> > > sonic3k.asm(40520): warning #180: address is not properly aligned
+> > >   tst.w (Competition_mode).w
+> > > sonic3k.asm(40551): warning #180: address is not properly aligned
+> > >   tst.w (Competition_mode).w
+> > > sonic3k.asm(41494): warning #180: address is not properly aligned
+> > >   tst.w (Competition_mode).w ; Are we in competition mode?
+> > > sonic3k.asm(43557): warning #180: address is not properly aligned
+> > >   tst.w (Competition_mode).w
+> > > sonic3k.asm(43606): warning #180: address is not properly aligned
+> > >   tst.w (Competition_mode).w
+> > > sonic3k.asm(44894): warning #180: address is not properly aligned
+> > >   tst.w (Competition_mode).w
+> > > sonic3k.asm(44971): warning #180: address is not properly aligned
+> > >   tst.w (Competition_mode).w
+> > > sonic3k.asm(45090): warning #180: address is not properly aligned
+> > >   tst.w (Competition_mode).w
+> > > sonic3k.asm(45201): warning #180: address is not properly aligned
+> > >   tst.w (Competition_mode).w
+> > > sonic3k.asm(48711): warning #180: address is not properly aligned
+> > >   tst.w (Competition_mode).w
+> > > sonic3k.asm(48727): warning #180: address is not properly aligned
+> > >   tst.w (Competition_mode).w
+> > > sonic3k.asm(48776): warning #180: address is not properly aligned
+> > >   tst.w (Competition_mode).w
+> > > sonic3k.asm(48792): warning #180: address is not properly aligned
+> > >   tst.w (Competition_mode).w
+> > > sonic3k.asm(50073): warning #180: address is not properly aligned
+> > >   tst.w (Competition_mode).w
+> > > sonic3k.asm(62137): warning #180: address is not properly aligned
+> > >   tst.w (Competition_mode).w
+> > > sonic3k.asm(64589): warning #180: address is not properly aligned
+> > >   clr.w (Competition_mode).w
+> > > sonic3k.asm(67175): warning #180: address is not properly aligned
+> > >   tst.w (Competition_mode).w
+> > > sonic3k.asm(70562): warning #180: address is not properly aligned
+> > >   tst.w (Competition_mode).w
+> > > sonic3k.asm(70893): warning #180: address is not properly aligned
+> > >   tst.w (Competition_mode).w
+> > > sonic3k.asm(108043): warning #180: address is not properly aligned
+> > >   move.l #HInt6,(H_int_addr).w ; HInt is needed to change Y scroll value to proper amount mid-draw
+> > > sonic3k.asm(117030): warning #180: address is not properly aligned
+> > >   move.w #$4EF9,(H_int_jump).w
+> > > sonic3k.asm(117031): warning #180: address is not properly aligned
+> > >   move.l #HInt6,(H_int_addr).w
+> > > sonic3k.asm(128653): warning #180: address is not properly aligned
+> > >   clr.w (Competition_mode).w
+> > > sonic3k.asm(128707): warning #180: address is not properly aligned
+> > >   clr.w (Competition_mode).w
+> > > sonic3k.asm(210954): warning #180: address is not properly aligned
+> > >   tst.w (Competition_mode).w   ; Liliam: bugfix - allow exiting debug in 2P mode

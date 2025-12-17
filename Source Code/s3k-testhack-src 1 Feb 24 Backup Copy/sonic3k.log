@@ -1,0 +1,9 @@
+> > > sonic3k.asm(9792):9: error #1320: range overflow
+> > > #mus_MutePSG
+> > >   moveq #mus_MutePSG,d0 ; -FLAMEWING Added in the FlameDriver From FlameWing -GDMC5
+> > >         ~~~~~~~~~~~~
+> > > Sound/Flamedriver.asm(295): warning #30: no sharefile created, SHARED ignored
+> > >  shared zQueueVariables,zMusicNumber,zSFXNumber0,zSFXNumber1
+> > > Sound/Flamedriver.asm(437): error: S&K Credits music must have an ID within the music range of [$1, $33), but it has ID $33
+> > >    fatal "S&K Credits music must have an ID within the music range of [$\{MusID__First}, $\{MusID__End}), but it has ID $\{mus_CreditsK}"
+fatal error, assembly terminated

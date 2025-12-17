@@ -1,0 +1,482 @@
+> > > s2.asm(5245): error #1420: invalid addressing mode for CMP
+> > >  cmpi.w d0,(Player_mode).w
+> > > _incObj/ObjE5 Knuckles.asm(220): error #1000: symbol double defined
+> > > obj0a_character
+> > > obj0a_character = objoff_3C
+> > > _incObj/ObjE5 Knuckles.asm(227): error #1000: symbol double defined
+> > > return_1A18C
+> > > return_1A18C:
+> > > _incObj/ObjE5 Knuckles.asm(237): error #1370: jump distance too big
+> > >  bne.s return_1A18C ; if already underwater, branch
+> > > _incObj/ObjE5 Knuckles.asm(257): error #1370: jump distance too big
+> > >  beq.s return_1A18C
+> > > _incObj/ObjE5 Knuckles.asm(265): error #1370: jump distance too big
+> > >  beq.s return_1A18C ; if already above water, branch
+> > > _incObj/ObjE5 Knuckles.asm(313): error #1000: symbol double defined
+> > > return_1A2DE
+> > > return_1A2DE:
+> > > _incObj/ObjE5 Knuckles.asm(1380): error #1340: short addressing not allowed
+> > >  addq.w #1,(Knuckles_Look_delay_counter).w
+> > > _incObj/ObjE5 Knuckles.asm(1381): error #1340: short addressing not allowed
+> > >  cmpi.w #$78,(Knuckles_Look_delay_counter).w
+> > > _incObj/ObjE5 Knuckles.asm(1383): error #1340: short addressing not allowed
+> > >  move.w #$78,(Knuckles_Look_delay_counter).w
+> > > _incObj/ObjE5 Knuckles.asm(1394): error #1340: short addressing not allowed
+> > >  addq.w #1,(Knuckles_Look_delay_counter).w
+> > > _incObj/ObjE5 Knuckles.asm(1395): error #1340: short addressing not allowed
+> > >  cmpi.w #$78,(Knuckles_Look_delay_counter).w
+> > > _incObj/ObjE5 Knuckles.asm(1397): error #1340: short addressing not allowed
+> > >  move.w #$78,(Knuckles_Look_delay_counter).w
+> > > _incObj/ObjE5 Knuckles.asm(1407): error #1340: short addressing not allowed
+> > >  move.w #0,(Knuckles_Look_delay_counter).w
+> > > _incObj/ObjE5 Knuckles.asm(1468): error #1370: jump distance too big
+> > >  bmi.s return_1A6BE
+> > > _incObj/ObjE5 Knuckles.asm(1471): error #1370: jump distance too big
+> > >  beq.s return_1A6BE ; If not moving, don't do anything
+> > > _incObj/ObjE5 Knuckles.asm(1481): error #1370: jump distance too big
+> > >  bpl.s return_1A6BE
+> > > _incObj/ObjE5 Knuckles.asm(1485): error #1370: jump distance too big
+> > >  beq.s loc_1A6BA
+> > > _incObj/ObjE5 Knuckles.asm(1487): error #1370: jump distance too big
+> > >  beq.s loc_1A6A8
+> > > _incObj/ObjE5 Knuckles.asm(1489): error #1370: jump distance too big
+> > >  beq.s loc_1A6A2
+> > > _incObj/ObjE5 Knuckles.asm(1504): error #1000: symbol double defined
+> > > loc_1A6A2
+> > > loc_1A6A2:
+> > > _incObj/ObjE5 Knuckles.asm(1508): error #1000: symbol double defined
+> > > loc_1A6A8
+> > > loc_1A6A8:
+> > > _incObj/ObjE5 Knuckles.asm(1521): error #1000: symbol double defined
+> > > loc_1A6BA
+> > > loc_1A6BA:
+> > > _incObj/ObjE5 Knuckles.asm(1524): error #1000: symbol double defined
+> > > return_1A6BE
+> > > return_1A6BE:
+> > > _incObj/ObjE5 Knuckles.asm(1567): error #1370: jump distance too big
+> > >  bne.s return_1A744
+> > > _incObj/ObjE5 Knuckles.asm(1569): error #1370: jump distance too big
+> > >  blt.s return_1A744
+> > > _incObj/ObjE5 Knuckles.asm(1575): error #1370: jump distance too big
+> > >  blo.s return_1A744 ; if he's drowning, branch to not make dust
+> > > _incObj/ObjE5 Knuckles.asm(1579): error #1000: symbol double defined
+> > > return_1A744
+> > > return_1A744:
+> > > _incObj/ObjE5 Knuckles.asm(1618): error #1370: jump distance too big
+> > >  bne.s return_1A7C4
+> > > _incObj/ObjE5 Knuckles.asm(1620): error #1370: jump distance too big
+> > >  bgt.s return_1A7C4
+> > > _incObj/ObjE5 Knuckles.asm(1626): error #1370: jump distance too big
+> > >  blo.s return_1A7C4 ; if he's drowning, branch to not make dust
+> > > _incObj/ObjE5 Knuckles.asm(1630): error #1000: symbol double defined
+> > > return_1A7C4
+> > > return_1A7C4:
+> > > _incObj/ObjE5 Knuckles.asm(1855): error #1370: jump distance too big
+> > >  blo.s return_1A972  ; if yes, return
+> > > _incObj/ObjE5 Knuckles.asm(1859): error #1370: jump distance too big
+> > >  beq.s return_1A972 ; return if d1 is 0
+> > > _incObj/ObjE5 Knuckles.asm(1878): error #1000: symbol double defined
+> > > return_1A972
+> > > return_1A972:
+> > > _incObj/ObjE5 Knuckles.asm(1917): error #1340: short addressing not allowed
+> > >  move.w (Camera_Max_Y_pos_target).w,d1
+> > > _incObj/ObjE5 Knuckles.asm(1988): error #1370: jump distance too big
+> > >  bne.s return_1AA36
+> > > _incObj/ObjE5 Knuckles.asm(1991): error #1000: symbol double defined
+> > > return_1AA36
+> > > return_1AA36:
+> > > _incObj/ObjE5 Knuckles.asm(2052): error #1000: symbol double defined
+> > > return_1AAE6
+> > > return_1AAE6:
+> > > _incObj/ObjE5 Knuckles.asm(2093): error #1370: jump distance too big
+> > >  bne.s return_1AB36  ; if yes, return
+> > > _incObj/ObjE5 Knuckles.asm(2095): error #1370: jump distance too big
+> > >  bge.s return_1AB36  ; if not, return
+> > > _incObj/ObjE5 Knuckles.asm(2098): error #1000: symbol double defined
+> > > return_1AB36
+> > > return_1AB36:
+> > > _incObj/ObjE5 Knuckles.asm(2179): error #1340: short addressing not allowed
+> > >  move.w #$800,(Knuckles_top_speed).w
+> > > _incObj/ObjE5 Knuckles.asm(2180): error #1340: short addressing not allowed
+> > >  move.w #$18,(Knuckles_acceleration).w
+> > > _incObj/ObjE5 Knuckles.asm(2181): error #1340: short addressing not allowed
+> > >  move.w #$C0,(Knuckles_deceleration).w
+> > > _incObj/ObjE5 Knuckles.asm(2190): error #1000: symbol double defined
+> > > return_1ABA4
+> > > return_1ABA4:
+> > > _incObj/ObjE5 Knuckles.asm(2223): error #1370: jump distance too big
+> > >  bne.s return_1AC3C
+> > > _incObj/ObjE5 Knuckles.asm(2235): error #1370: jump distance too big
+> > >  beq.s return_1AC3C
+> > > _incObj/ObjE5 Knuckles.asm(2240): error #1000: symbol double defined
+> > > return_1AC3C
+> > > return_1AC3C:
+> > > _incObj/ObjE5 Knuckles.asm(2255): error #1370: jump distance too big
+> > >  bne.s return_1AC8C
+> > > _incObj/ObjE5 Knuckles.asm(2272): error #1000: symbol double defined
+> > > return_1AC8C
+> > > return_1AC8C:
+> > > _incObj/ObjE5 Knuckles.asm(2298):9: error #1505: addressing mode not supported on 68000
+> > > SpindashSpeeds(pc,d0.w)
+> > >  move.w SpindashSpeeds(pc,d0.w),inertia(a0)
+> > >         ~~~~~~~~~~~~~~~~~~~~~~~
+> > > _incObj/ObjE5 Knuckles.asm(2301):9: error #1505: addressing mode not supported on 68000
+> > > SpindashSpeedsSuper(pc,d0.w)
+> > >  move.w SpindashSpeedsSuper(pc,d0.w),inertia(a0)
+> > >         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+> > > _incObj/ObjE5 Knuckles.asm(2331): error #1000: symbol double defined
+> > > SpindashSpeeds
+> > > SpindashSpeeds:
+> > > _incObj/ObjE5 Knuckles.asm(2342): error #1000: symbol double defined
+> > > SpindashSpeedsSuper
+> > > SpindashSpeedsSuper:
+> > > _incObj/ObjE5 Knuckles.asm(2378): error #1370: jump distance too big
+> > >  beq.s loc_1AD8C
+> > > _incObj/ObjE5 Knuckles.asm(2383): error #1000: symbol double defined
+> > > loc_1AD8C
+> > > loc_1AD8C:
+> > > _incObj/ObjE5 Knuckles.asm(2401): error #1370: jump distance too big
+> > >  bhs.s return_1ADCA
+> > > _incObj/ObjE5 Knuckles.asm(2407): error #1370: jump distance too big
+> > >  beq.s return_1ADCA
+> > > _incObj/ObjE5 Knuckles.asm(2408): error #1370: jump distance too big
+> > >  bmi.s loc_1ADC6
+> > > _incObj/ObjE5 Knuckles.asm(2416): error #1000: symbol double defined
+> > > loc_1ADC6
+> > > loc_1ADC6:
+> > > _incObj/ObjE5 Knuckles.asm(2419): error #1000: symbol double defined
+> > > return_1ADCA
+> > > return_1ADCA:
+> > > _incObj/ObjE5 Knuckles.asm(2434): error #1370: jump distance too big
+> > >  bhs.s return_1AE06
+> > > _incObj/ObjE5 Knuckles.asm(2440): error #1370: jump distance too big
+> > >  bmi.s loc_1ADFC
+> > > _incObj/ObjE5 Knuckles.asm(2442): error #1370: jump distance too big
+> > >  bpl.s loc_1ADF6
+> > > _incObj/ObjE5 Knuckles.asm(2445): error #1000: symbol double defined
+> > > loc_1ADF6
+> > > loc_1ADF6:
+> > > _incObj/ObjE5 Knuckles.asm(2450): error #1000: symbol double defined
+> > > loc_1ADFC
+> > > loc_1ADFC:
+> > > _incObj/ObjE5 Knuckles.asm(2452): error #1370: jump distance too big
+> > >  bmi.s loc_1AE02
+> > > _incObj/ObjE5 Knuckles.asm(2455): error #1000: symbol double defined
+> > > loc_1AE02
+> > > loc_1AE02:
+> > > _incObj/ObjE5 Knuckles.asm(2458): error #1000: symbol double defined
+> > > return_1AE06
+> > > return_1AE06:
+> > > _incObj/ObjE5 Knuckles.asm(2472): error #1370: jump distance too big
+> > >  bne.s return_1AE42
+> > > _incObj/ObjE5 Knuckles.asm(2474): error #1370: jump distance too big
+> > >  bne.s loc_1AE44
+> > > _incObj/ObjE5 Knuckles.asm(2478): error #1370: jump distance too big
+> > >  beq.s return_1AE42
+> > > _incObj/ObjE5 Knuckles.asm(2481): error #1370: jump distance too big
+> > >  bhs.s return_1AE42
+> > > _incObj/ObjE5 Knuckles.asm(2486): error #1000: symbol double defined
+> > > return_1AE42
+> > > return_1AE42:
+> > > _incObj/ObjE5 Knuckles.asm(2490): error #1000: symbol double defined
+> > > loc_1AE44
+> > > loc_1AE44:
+> > > _incObj/ObjE5 Knuckles.asm(2505): error #1370: jump distance too big
+> > >  bpl.s loc_1AE5A ; if higher than 0, branch
+> > > _incObj/ObjE5 Knuckles.asm(2515): error #1000: symbol double defined
+> > > loc_1AE5A
+> > > loc_1AE5A:
+> > > _incObj/ObjE5 Knuckles.asm(2535): error #1370: jump distance too big
+> > >  beq.s return_1AEA8
+> > > _incObj/ObjE5 Knuckles.asm(2566): error #1000: symbol double defined
+> > > return_1AEA8
+> > > return_1AEA8:
+> > > _incObj/ObjE5 Knuckles.asm(2776): error #1370: jump distance too big
+> > >  bpl.s return_1AF8A
+> > > _incObj/ObjE5 Knuckles.asm(2783): error #1370: jump distance too big
+> > >  blt.s return_1AF8A
+> > > _incObj/ObjE5 Knuckles.asm(2791): error #1370: jump distance too big
+> > >  bne.s loc_1AF68
+> > > _incObj/ObjE5 Knuckles.asm(2795): error #1370: jump distance too big
+> > >  beq.s loc_1AF5A
+> > > _incObj/ObjE5 Knuckles.asm(2797): error #1370: jump distance too big
+> > >  bra.s loc_1AF7C
+> > > _incObj/ObjE5 Knuckles.asm(2800): error #1000: symbol double defined
+> > > loc_1AF5A
+> > > loc_1AF5A:
+> > > _incObj/ObjE5 Knuckles.asm(2806): error #1000: symbol double defined
+> > > loc_1AF68
+> > > loc_1AF68:
+> > > _incObj/ObjE5 Knuckles.asm(2809): error #1370: jump distance too big
+> > >  ble.s loc_1AF7C
+> > > _incObj/ObjE5 Knuckles.asm(2812): error #1000: symbol double defined
+> > > loc_1AF7C
+> > > loc_1AF7C:
+> > > _incObj/ObjE5 Knuckles.asm(2815): error #1370: jump distance too big
+> > >  bpl.s return_1AF8A
+> > > _incObj/ObjE5 Knuckles.asm(2818): error #1000: symbol double defined
+> > > return_1AF8A
+> > > return_1AF8A:
+> > > _incObj/ObjE5 Knuckles.asm(2838): error #1370: jump distance too big
+> > >  bpl.s return_1AFBE
+> > > _incObj/ObjE5 Knuckles.asm(2841): error #1000: symbol double defined
+> > > return_1AFBE
+> > > return_1AFBE:
+> > > _incObj/ObjE5 Knuckles.asm(2847): error #1370: jump distance too big
+> > >  bmi.s return_1AFE6
+> > > _incObj/ObjE5 Knuckles.asm(2850): error #1370: jump distance too big
+> > >  bpl.s return_1AFE6
+> > > _incObj/ObjE5 Knuckles.asm(2857): error #1000: symbol double defined
+> > > return_1AFE6
+> > > return_1AFE6:
+> > > _incObj/ObjE5 Knuckles.asm(2876): error #1370: jump distance too big
+> > >  bpl.s return_1B042
+> > > _incObj/ObjE5 Knuckles.asm(2881): error #1370: jump distance too big
+> > >  bne.s loc_1B02C
+> > > _incObj/ObjE5 Knuckles.asm(2886): error #1000: symbol double defined
+> > > loc_1B02C
+> > > loc_1B02C:
+> > > _incObj/ObjE5 Knuckles.asm(2891): error #1370: jump distance too big
+> > >  bpl.s return_1B042
+> > > _incObj/ObjE5 Knuckles.asm(2894): error #1000: symbol double defined
+> > > return_1B042
+> > > return_1B042:
+> > > _incObj/ObjE5 Knuckles.asm(2915): error #1370: jump distance too big
+> > >  bpl.s return_1B076
+> > > _incObj/ObjE5 Knuckles.asm(2918): error #1000: symbol double defined
+> > > return_1B076
+> > > return_1B076:
+> > > _incObj/ObjE5 Knuckles.asm(2925): error #1370: jump distance too big
+> > >  bmi.s return_1B09E
+> > > _incObj/ObjE5 Knuckles.asm(2928): error #1370: jump distance too big
+> > >  bpl.s return_1B09E
+> > > _incObj/ObjE5 Knuckles.asm(2935): error #1000: symbol double defined
+> > > return_1B09E
+> > > return_1B09E:
+> > > _incObj/ObjE5 Knuckles.asm(2985): error #1370: jump distance too big
+> > >  bne.s return_1B11E
+> > > _incObj/ObjE5 Knuckles.asm(2989): error #1000: symbol double defined
+> > > return_1B11E
+> > > return_1B11E:
+> > > _incObj/ObjE5 Knuckles.asm(3037): error #1340: short addressing not allowed
+> > >  move.w (Camera_Max_Y_pos_target).w,d1
+> > > _incObj/ObjE5 Knuckles.asm(3047): error #1370: jump distance too big
+> > >  bne.s return_1B1C8
+> > > _incObj/ObjE5 Knuckles.asm(3058): error #1000: symbol double defined
+> > > return_1B1C8
+> > > return_1B1C8:
+> > > _incObj/ObjE5 Knuckles.asm(3146): error #1370: jump distance too big
+> > >  beq.s return_1B31A
+> > > _incObj/ObjE5 Knuckles.asm(3164): error #1000: symbol double defined
+> > > return_1B31A
+> > > return_1B31A:
+> > > _incObj/ObjE5 Knuckles.asm(3209): error #1370: jump distance too big
+> > >  beq.s SAnim_Do  ; if not, branch
+> > > _incObj/ObjE5 Knuckles.asm(3215): error #1000: symbol double defined
+> > > SAnim_Do
+> > > SAnim_Do:
+> > > _incObj/ObjE5 Knuckles.asm(3219): error #1370: jump distance too big
+> > >  bmi.s SAnim_WalkRun ; if animation is walk/run/roll/jump, branch
+> > > _incObj/ObjE5 Knuckles.asm(3225): error #1370: jump distance too big
+> > >  bpl.s SAnim_Delay   ; if time remains, branch
+> > > _incObj/ObjE5 Knuckles.asm(3228): error #1000: symbol double defined
+> > > SAnim_Do2
+> > > SAnim_Do2:
+> > > _incObj/ObjE5 Knuckles.asm(3236): error #1370: jump distance too big
+> > >  bhs.s SAnim_End_FF  ; if animation is complete, branch
+> > > _incObj/ObjE5 Knuckles.asm(3238): error #1000: symbol double defined
+> > > SAnim_Next
+> > > SAnim_Next:
+> > > _incObj/ObjE5 Knuckles.asm(3242): error #1000: symbol double defined
+> > > SAnim_Delay
+> > > SAnim_Delay:
+> > > _incObj/ObjE5 Knuckles.asm(3246): error #1000: symbol double defined
+> > > SAnim_End_FF
+> > > SAnim_End_FF:
+> > > _incObj/ObjE5 Knuckles.asm(3248): error #1370: jump distance too big
+> > >  bne.s SAnim_End_FE ; if not, branch
+> > > _incObj/ObjE5 Knuckles.asm(3251): error #1370: jump distance too big
+> > >  bra.s SAnim_Next
+> > > _incObj/ObjE5 Knuckles.asm(3254): error #1000: symbol double defined
+> > > SAnim_End_FE
+> > > SAnim_End_FE:
+> > > _incObj/ObjE5 Knuckles.asm(3256): error #1370: jump distance too big
+> > >  bne.s SAnim_End_FD ; if not, branch
+> > > _incObj/ObjE5 Knuckles.asm(3261): error #1370: jump distance too big
+> > >  bra.s SAnim_Next
+> > > _incObj/ObjE5 Knuckles.asm(3264): error #1000: symbol double defined
+> > > SAnim_End_FD
+> > > SAnim_End_FD:
+> > > _incObj/ObjE5 Knuckles.asm(3266): error #1370: jump distance too big
+> > >  bne.s SAnim_End  ; if not, branch
+> > > _incObj/ObjE5 Knuckles.asm(3269): error #1000: symbol double defined
+> > > SAnim_End
+> > > SAnim_End:
+> > > _incObj/ObjE5 Knuckles.asm(3273): error #1000: symbol double defined
+> > > SAnim_WalkRun
+> > > SAnim_WalkRun:
+> > > _incObj/ObjE5 Knuckles.asm(3330): error #1370: jump distance too big
+> > >  bpl.s return_1B4AC
+> > > _incObj/ObjE5 Knuckles.asm(3340): error #1000: symbol double defined
+> > > return_1B4AC
+> > > return_1B4AC:
+> > > _incObj/ObjE5 Knuckles.asm(3344): error #1000: symbol double defined
+> > > SAnim_Tumble
+> > > SAnim_Tumble:
+> > > _incObj/ObjE5 Knuckles.asm(3349): error #1370: jump distance too big
+> > >  bne.s SAnim_Tumble_Left
+> > > _incObj/ObjE5 Knuckles.asm(3362): error #1000: symbol double defined
+> > > SAnim_Tumble_Left
+> > > SAnim_Tumble_Left:
+> > > _incObj/ObjE5 Knuckles.asm(3365): error #1370: jump distance too big
+> > >  beq.s loc_1B566
+> > > _incObj/ObjE5 Knuckles.asm(3368): error #1370: jump distance too big
+> > >  bra.s loc_1B572
+> > > _incObj/ObjE5 Knuckles.asm(3371): error #1000: symbol double defined
+> > > loc_1B566
+> > > loc_1B566:
+> > > _incObj/ObjE5 Knuckles.asm(3376): error #1000: symbol double defined
+> > > loc_1B572
+> > > loc_1B572:
+> > > _incObj/ObjE5 Knuckles.asm(3386): error #1000: symbol double defined
+> > > SAnim_Roll
+> > > SAnim_Roll:
+> > > _incObj/ObjE5 Knuckles.asm(3390): error #1370: jump distance too big
+> > >  bne.s SAnim_Push ; if not, branch
+> > > _incObj/ObjE5 Knuckles.asm(3411): error #1000: symbol double defined
+> > > SAnim_Push
+> > > SAnim_Push:
+> > > _incObj/ObjE5 Knuckles.asm(3446): error #1000: symbol double defined
+> > > SonAni_Wait_ptr
+> > > SonAni_Wait_ptr:  offsetTableEntry.w KnucklesAni_Wait  ;  5 ;   5
+> > > _incObj/ObjE5 Knuckles.asm(3447): error #1000: symbol double defined
+> > > SonAni_Balance_ptr
+> > > SonAni_Balance_ptr:  offsetTableEntry.w KnucklesAni_Balance  ;  6 ;   6
+> > > _incObj/ObjE5 Knuckles.asm(3448): error #1000: symbol double defined
+> > > SonAni_LookUp_ptr
+> > > SonAni_LookUp_ptr:  offsetTableEntry.w KnucklesAni_LookUp  ;  7 ;   7
+> > > _incObj/ObjE5 Knuckles.asm(3449): error #1000: symbol double defined
+> > > SonAni_Duck_ptr
+> > > SonAni_Duck_ptr:  offsetTableEntry.w KnucklesAni_Duck  ;  8 ;   8
+> > > _incObj/ObjE5 Knuckles.asm(3450): error #1000: symbol double defined
+> > > SonAni_Spindash_ptr
+> > > SonAni_Spindash_ptr:  offsetTableEntry.w KnucklesAni_Spindash  ;  9 ;   9
+> > > _incObj/ObjE5 Knuckles.asm(3451): error #1000: symbol double defined
+> > > SonAni_Blink_ptr
+> > > SonAni_Blink_ptr:  offsetTableEntry.w KnucklesAni_Unused  ; 10 ;  $A
+> > > _incObj/ObjE5 Knuckles.asm(3452): error #1000: symbol double defined
+> > > SonAni_GetUp_ptr
+> > > SonAni_GetUp_ptr:  offsetTableEntry.w KnucklesAni_Pull  ; 11 ;  $B
+> > > _incObj/ObjE5 Knuckles.asm(3453): error #1000: symbol double defined
+> > > SonAni_Balance2_ptr
+> > > SonAni_Balance2_ptr:  offsetTableEntry.w KnucklesAni_Balance2  ; 12 ;  $C
+> > > _incObj/ObjE5 Knuckles.asm(3454): error #1000: symbol double defined
+> > > SonAni_Stop_ptr
+> > > SonAni_Stop_ptr:  offsetTableEntry.w KnucklesAni_Stop  ; 13 ;  $D
+> > > _incObj/ObjE5 Knuckles.asm(3455): error #1000: symbol double defined
+> > > SonAni_Float_ptr
+> > > SonAni_Float_ptr:  offsetTableEntry.w KnucklesAni_Float  ; 14 ;  $E
+> > > _incObj/ObjE5 Knuckles.asm(3456): error #1000: symbol double defined
+> > > SonAni_Float2_ptr
+> > > SonAni_Float2_ptr:  offsetTableEntry.w KnucklesAni_Float2  ; 15 ;  $F
+> > > _incObj/ObjE5 Knuckles.asm(3457): error #1000: symbol double defined
+> > > SonAni_Spring_ptr
+> > > SonAni_Spring_ptr:  offsetTableEntry.w KnucklesAni_Spring  ; 16 ; $10
+> > > _incObj/ObjE5 Knuckles.asm(3458): error #1000: symbol double defined
+> > > SonAni_Hang_ptr
+> > > SonAni_Hang_ptr:  offsetTableEntry.w KnucklesAni_Hang  ; 17 ; $11
+> > > _incObj/ObjE5 Knuckles.asm(3459): error #1000: symbol double defined
+> > > SonAni_Dash2_ptr
+> > > SonAni_Dash2_ptr:  offsetTableEntry.w KnucklesAni_Unused_0  ; 18 ; $12
+> > > _incObj/ObjE5 Knuckles.asm(3460): error #1000: symbol double defined
+> > > SonAni_Dash3_ptr
+> > > SonAni_Dash3_ptr:  offsetTableEntry.w KnucklesAni_S3EndingPose ; 19 ; $13
+> > > _incObj/ObjE5 Knuckles.asm(3461): error #1000: symbol double defined
+> > > SonAni_Hang2_ptr
+> > > SonAni_Hang2_ptr:  offsetTableEntry.w KnucklesAni_WFZHang  ; 20 ; $14
+> > > _incObj/ObjE5 Knuckles.asm(3462): error #1000: symbol double defined
+> > > SonAni_Bubble_ptr
+> > > SonAni_Bubble_ptr:  offsetTableEntry.w KnucklesAni_Bubble  ; 21 ; $15
+> > > _incObj/ObjE5 Knuckles.asm(3464): error #1000: symbol double defined
+> > > SonAni_Drown_ptr
+> > > SonAni_Drown_ptr:  offsetTableEntry.w KnucklesAni_Drown  ; 23 ; $17
+> > > _incObj/ObjE5 Knuckles.asm(3465): error #1000: symbol double defined
+> > > SonAni_Death_ptr
+> > > SonAni_Death_ptr:  offsetTableEntry.w KnucklesAni_Death  ; 24 ; $18
+> > > _incObj/ObjE5 Knuckles.asm(3466): error #1000: symbol double defined
+> > > SonAni_Hurt_ptr
+> > > SonAni_Hurt_ptr:  offsetTableEntry.w KnucklesAni_OilSlide  ; 25 ; $19
+> > > _incObj/ObjE5 Knuckles.asm(3467): error #1000: symbol double defined
+> > > SonAni_Hurt2_ptr
+> > > SonAni_Hurt2_ptr:  offsetTableEntry.w KnucklesAni_Hurt  ; 26 ; $1A
+> > > _incObj/ObjE5 Knuckles.asm(3468): error #1000: symbol double defined
+> > > SonAni_Slide_ptr
+> > > SonAni_Slide_ptr:  offsetTableEntry.w KnucklesAni_OilSlide_0 ; 27 ; $1B
+> > > _incObj/ObjE5 Knuckles.asm(3469): error #1000: symbol double defined
+> > > SonAni_Blank_ptr
+> > > SonAni_Blank_ptr:  offsetTableEntry.w KnucklesAni_Blank  ; 28 ; $1C
+> > > _incObj/ObjE5 Knuckles.asm(3470): error #1000: symbol double defined
+> > > SonAni_Balance3_ptr
+> > > SonAni_Balance3_ptr:  offsetTableEntry.w KnucklesAni_Unused_1  ; 29 ; $1D
+> > > _incObj/ObjE5 Knuckles.asm(3471): error #1000: symbol double defined
+> > > SonAni_Balance4_ptr
+> > > SonAni_Balance4_ptr:  offsetTableEntry.w KnucklesAni_Unused_2  ; 30 ; $1E
+> > > _incObj/ObjE5 Knuckles.asm(3472): error #1000: symbol double defined
+> > > SupSonAni_Transform_ptr
+> > > SupSonAni_Transform_ptr: offsetTableEntry.w KnucklesAni_Transform ; 31 ; $1F
+> > > _incObj/ObjE5 Knuckles.asm(3604): error #1370: jump distance too big
+> > >  beq.s return_1B89A
+> > > _incObj/ObjE5 Knuckles.asm(3612): error #1370: jump distance too big
+> > >  bmi.s return_1B89A
+> > > _incObj/ObjE5 Knuckles.asm(3615): error #1000: symbol double defined
+> > > SPLC_ReadEntry
+> > > SPLC_ReadEntry:
+> > > _incObj/ObjE5 Knuckles.asm(3631): error #1000: symbol double defined
+> > > return_1B89A
+> > > return_1B89A:
+> > > _incObj/Obj38 Shield.asm(25): error #1370: jump distance too big
+> > >  bsr.w Adjust2PArtPointer
+> > > _incObj/Obj35 Invincibility Stars.asm(37): error #1370: jump distance too big
+> > >  bsr.w Adjust2PArtPointer2
+> > > _incObj/Obj35 Invincibility Stars.asm(58): error #1370: jump distance too big
+> > >  bne.w DeleteObject
+> > > _incObj/Obj35 Invincibility Stars.asm(61): error #1370: jump distance too big
+> > >  beq.w DeleteObject
+> > > _incObj/Obj35 Invincibility Stars.asm(99): error #1370: jump distance too big
+> > >  bra.w DisplaySprite3
+> > > _incObj/Obj35 Invincibility Stars.asm(107): error #1370: jump distance too big
+> > >  bne.w DeleteObject
+> > > _incObj/Obj35 Invincibility Stars.asm(110): error #1370: jump distance too big
+> > >  beq.w DeleteObject
+> > > _incObj/Obj35 Invincibility Stars.asm(171): error #1370: jump distance too big
+> > >  bra.w DisplaySprite3
+> > > _incObj/Obj08 Water splash.asm(44): error #1370: jump distance too big
+> > >  bsr.w Adjust2PArtPointer
+> > > _incObj/Obj08 Water splash.asm(115): error #1370: jump distance too big
+> > >  bra.w DeleteObject
+> > > _incObj/Obj08 Water splash.asm(131): error #1370: jump distance too big
+> > >  bsr.w SingleObjLoad
+> > > _incObj/Obj7E Super Sonic's stars.asm(24): error #1370: jump distance too big
+> > >  bsr.w Adjust2PArtPointer
+> > > _incObj/Obj79 Starpost.asm(286): error #1370: jump distance too big
+> > > - bsr.w SingleObjLoad2
+> > > _incObj/Obj44 Bumper.asm(80): error #1370: jump distance too big
+> > >  bsr.w SingleObjLoad
+> > > _incObj/Obj24 Bubbles.asm(152): error #1370: jump distance too big
+> > >  bsr.w SingleObjLoad
+> > > s2.asm(33964): error #1370: jump distance too big
+> > >  bsr.w PlatformObject
+> > > s2.asm(34101): error #1370: jump distance too big
+> > >  bsr.w PlatformObject
+> > > _incObj/Obj12 HPZ Emerald.asm(32): error #1370: jump distance too big
+> > >  bsr.w SolidObject
+> > > _incObj/Obj74 Invisible solid block.asm(44): error #1370: jump distance too big
+> > >  bsr.w SolidObject_Always
+> > > _incObj/Obj06 Twisting Spiral pathway.asm(86): error #1370: jump distance too big
+> > >  bsr.w RideObject_SetRide
+> > > _incObj/Obj06 Twisting Spiral pathway.asm(114): error #1370: jump distance too big
+> > >  bsr.w RideObject_SetRide
+> > > _incObj/Obj06 Twisting Spiral pathway.asm(282): error #1370: jump distance too big
+> > >  bsr.w RideObject_SetRide
+> > > s2.asm(34399): error #1370: jump distance too big
+> > >  bra.w SlopedPlatform
