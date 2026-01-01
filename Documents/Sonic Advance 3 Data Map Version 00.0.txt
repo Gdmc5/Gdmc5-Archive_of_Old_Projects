@@ -1,0 +1,1727 @@
+Sonic Advance 3 Data Map
+Version 00.0
+By Gdmc5 With Help From Others
+Check the Credits At The End Of The File for all of the People's Usernames
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Sonic Advance 3 Rom Map
+
+GBA Header
+
+00000A0 Game Title Mini Note It Has 11 bytes
+
+00000AC Serial String Mini Note It Has 4 bytes
+
+00000BD Checksum Mini Note It Has 1 byte
+
+
+Sprites
+
+
+Main Sprite Pointers
+0003314F0 Location
+000000404 Pointer
+
+
+Sprite data
+00076CB1C Location
+000331500 Pointer
+
+
+Sprite Mappings/Animation Mapping
+00032FD20 Location 0
+000E2C3A8 Location 1
+0003524FC Location 2
+0003314F0 Pointer 0
+0003314F4 Pointer 1
+0003314F8 Pointer 2
+
+
+Palettes
+000353CCC Location Mini Note MonoBlock
+0003314FC Pointer
+
+
+Sound Test
+
+General Sprite Selections
+
+000D729C selection for Play button Mini Note 8 bytes for each language
+
+000D72CC selection for Back/Stop button Mini Note 8/8 bytes
+
+000D7334 selection for Sound Test title for each language Mini Note 8 bytes
+
+000D7364 selection for numbers Mini Note 8 bytes
+
+000D73B4 selection for double arrows Mini Note 8 bytes. (btw, the sprite is doubled here, there's no double arrow sprite state)
+
+
+Sound Test Music Titles
+000D73BC NULL Mini Note beginning of music titles - ASCII
+
+Special notes:
+
+Using 0 (30h) results in space;
+Char ] (5Dh) appears with wrong palette, probably it's from an error at its mapping. The beta version of SA3 also has this bug.
+
+
+Sound Test Music Assignments Mini Note 2 bytes per title. The value corresponds to music pointer order. See Musics section for more details
+000D71A4 
+
+
+Dynamic Text
+
+00E7E6E8 Japanese Set
+00E7E6EC English Set
+00E7E6F0 German Set
+00E7E6F4 French Set
+00E7E6F8 Spanish Set
+00E7E6FC Italian Set
+
+
+Text Format
+
+0151 Spacer Mini Note The next 2 bytes tell the size of the space
+0152 Timer Mini Note The next 2 bytes tell the speed which letters appear
+0153 Line break Mini Note like when you press ENTER in a text editor
+0154 Button request Mini Note Player must press A button to see the rest of the text
+0155 EOT Mini Note (end of text)
+
+
+Zones
+
+Artwork Mini Note It Has 4 Pointers Per Scene
+000D0624 Null Restarts The Game
+ Sonic Factory
+000D0654 Route 99 Map
+ Route 99 Act 1
+ Route 99 Act 2
+ Route 99 Act 3
+ Route 99 Act 4 Unused Restarts The Game
+ Route 99 Boss Act
+ Route 99 Minigame 1
+ Route 99 Minigame 2
+ Sunset Hill Unknown Unused Restarts The Game
+ Chao Playground
+ Sunset Hill Map
+ Sunset Hill Act 1
+ Sunset Hill Act 2
+ Sunset Hill Act 3
+ Sunset Hill Act 4 Unused Restarts The Game
+ Sunset Hill Boss Act
+ Sunset Hill Minigame 1
+ Sunset Hill Minigame 2
+ Ocean Base Unknown 1 Unused Restarts The Game
+ Ocean Base Unknown 2 Unused Restarts The Game
+ Ocean Base Map
+ Ocean Base Act 1
+ Ocean Base Act 2
+ Ocean Base Act 3
+ Ocean Base Act 4 Unused Restarts The Game
+ Ocean Base Boss Act
+ Ocean Base Minigame 1
+ Ocean Base Minigame 2
+ Toy Kingdom Unknown 1 Unused Restarts The Game
+ Toy Kingdom Unknown 2 Unused Restarts The Game
+ Toy Kingdom Map
+ Toy Kingdom Act 1
+ Toy Kingdom Act 2
+ Toy Kingdom Act 3
+ Toy Kingdom Act 4 Unused Restarts The Game
+ Toy Kingdom Boss Act
+ Toy Kingdom Minigame 1
+ Toy Kingdom Minigame 2
+ Twinkle Snow Unknown 1 Unused Restarts The Game
+ Twinkle Snow Unknown 2 Unused Restarts The Game
+ Twinkle Snow Map
+ Twinkle Snow Act 1
+ Twinkle Snow Act 2
+ Twinkle Snow Act 3
+ Twinkle Snow Act 4 Unused Restarts The Game
+ Twinkle Snow Boss Act
+ Twinkle Snow Minigame 1
+ Twinkle Snow Minigame 2
+ Cyber Track Unknown 1 Unused Restarts The Game
+ Cyber Track Unknown 2 Unused Restarts The Game
+ Cyber Track Map
+ Cyber Track Act 1
+ Cyber Track Act 2
+ Cyber Track Act 3
+ Cyber Track Act 4 Unused Restarts The Game
+ Cyber Track Boss Act
+ Cyber Track Minigame 1
+ Cyber Track Minigame 2
+ Chaos Angel Unknown 1 Unused Restarts The Game
+ Chaos Angel Unknown 2 Unused Restarts The Game
+000D09E4 Chaos Angel Map
+ Chaos Angel Act 1
+ Chaos Angel Act 2
+ Chaos Angel Act 3
+ Chaos Angel Act 4 Unused Restarts The Game
+ Chaos Angel Boss Act
+ Chaos Angel Minigame 1
+ Chaos Angel Minigame 2
+ Altar Emerald Unknown Unused Restarts The Game
+ Altar Emerald Boss Act
+ Nonaggression Boss Act
+ Invaild
+
+
+Collision Mini Note It Has 6 Pointers, plus 12 bytes Per Scene
+000D0D78 Null Restarts The Game
+000D0D9C Sonic Factory
+000D0DC0 Route 99 Map
+000D0DD4 Route 99 Act 1
+000D0DF8 Route 99 Act 2
+000D0E1C Route 99 Act 3
+000D0E40 Route 99 Act 4 Unused Restarts The Game
+000D0E64 Route 99 Boss Act
+000D0E88 Route 99 Minigame 1
+000D0EAC Route 99 Minigame 2
+000D0ED0 Sunset Hill Unknown Unused Restarts The Game
+000D0EF4 Chao Playground
+000D0F18 Sunset Hill Map
+000D0F3C Sunset Hill Act 1
+000D0F60 Sunset Hill Act 2
+000D0F84 Sunset Hill Act 3
+000D0FA8 Sunset Hill Act 4 Unused Restarts The Game
+000D0FFC Sunset Hill Boss Act
+000D1020 Sunset Hill Minigame 1
+000D1044 Sunset Hill Minigame 2
+ Ocean Base Unknown 1 Unused Restarts The Game
+ Ocean Base Unknown 2 Unused Restarts The Game
+ Ocean Base Map
+ Ocean Base Act 1
+ Ocean Base Act 2
+ Ocean Base Act 3
+ Ocean Base Act 4 Unused Restarts The Game
+ Ocean Base Boss Act
+ Ocean Base Minigame 1
+ Ocean Base Minigame 2
+ Toy Kingdom Unknown 1 Unused Restarts The Game
+ Toy Kingdom Unknown 2 Unused Restarts The Game
+ Toy Kingdom Map
+ Toy Kingdom Act 1
+ Toy Kingdom Act 2
+ Toy Kingdom Act 3
+ Toy Kingdom Act 4 Unused Restarts The Game
+ Toy Kingdom Boss Act
+ Toy Kingdom Minigame 1
+ Toy Kingdom Minigame 2
+ Twinkle Snow Unknown 1 Unused Restarts The Game
+ Twinkle Snow Unknown 2 Unused Restarts The Game
+ Twinkle Snow Map
+ Twinkle Snow Act 1
+ Twinkle Snow Act 2
+ Twinkle Snow Act 3
+ Twinkle Snow Act 4 Unused Restarts The Game
+ Twinkle Snow Boss Act
+ Twinkle Snow Minigame 1
+ Twinkle Snow Minigame 2
+ Cyber Track Unknown 1 Unused Restarts The Game
+ Cyber Track Unknown 2 Unused Restarts The Game
+ Cyber Track Map
+ Cyber Track Act 1
+ Cyber Track Act 2
+ Cyber Track Act 3
+ Cyber Track Act 4 Unused Restarts The Game
+ Cyber Track Boss Act
+ Cyber Track Minigame 1
+ Cyber Track Minigame 2
+ Chaos Angel Unknown 1 Unused Restarts The Game
+ Chaos Angel Unknown 2 Unused Restarts The Game
+ Chaos Angel Map
+ Chaos Angel Act 1
+ Chaos Angel Act 2
+ Chaos Angel Act 3
+ Chaos Angel Act 4 Unused Restarts The Game
+ Chaos Angel Boss Act
+ Chaos Angel Minigame 1
+ Chaos Angel Minigame 2
+ Altar Emerald Unknown Unused Restarts The Game
+ Altar Emerald Boss Act
+ Nonaggression Boss Act
+ Invaild
+
+
+Background Deformation Mini Note It Has 2 Pointers Per Scene
+000D0344 Null Restarts The Game
+ Sonic Factory
+ Route 99 Map
+ Route 99 Act 1
+ Route 99 Act 2
+ Route 99 Act 3
+ Route 99 Act 4 Unused Restarts The Game
+ Route 99 Boss Act
+ Route 99 Minigame 1
+ Route 99 Minigame 2
+ Sunset Hill Unknown Unused Restarts The Game
+ Chao Playground
+ Sunset Hill Map
+ Sunset Hill Act 1
+ Sunset Hill Act 2
+ Sunset Hill Act 3
+ Sunset Hill Act 4 Unused Restarts The Game
+ Sunset Hill Boss Act
+ Sunset Hill Minigame 1
+ Sunset Hill Minigame 2
+ Ocean Base Unknown 1 Unused Restarts The Game
+ Ocean Base Unknown 2 Unused Restarts The Game
+ Ocean Base Map
+ Ocean Base Act 1
+ Ocean Base Act 2
+ Ocean Base Act 3
+ Ocean Base Act 4 Unused Restarts The Game
+ Ocean Base Boss Act
+ Ocean Base Minigame 1
+ Ocean Base Minigame 2
+ Toy Kingdom Unknown 1 Unused Restarts The Game
+ Toy Kingdom Unknown 2 Unused Restarts The Game
+ Toy Kingdom Map
+ Toy Kingdom Act 1
+ Toy Kingdom Act 2
+ Toy Kingdom Act 3
+ Toy Kingdom Act 4 Unused Restarts The Game
+ Toy Kingdom Boss Act
+ Toy Kingdom Minigame 1
+ Toy Kingdom Minigame 2
+ Twinkle Snow Unknown 1 Unused Restarts The Game
+ Twinkle Snow Unknown 2 Unused Restarts The Game
+ Twinkle Snow Map
+ Twinkle Snow Act 1
+ Twinkle Snow Act 2
+ Twinkle Snow Act 3
+ Twinkle Snow Act 4 Unused Restarts The Game
+ Twinkle Snow Boss Act
+ Twinkle Snow Minigame 1
+ Twinkle Snow Minigame 2
+ Cyber Track Unknown 1 Unused Restarts The Game
+ Cyber Track Unknown 2 Unused Restarts The Game
+ Cyber Track Map
+ Cyber Track Act 1
+ Cyber Track Act 2
+ Cyber Track Act 3
+ Cyber Track Act 4 Unused Restarts The Game
+ Cyber Track Boss Act
+ Cyber Track Minigame 1
+ Cyber Track Minigame 2
+ Chaos Angel Unknown 1 Unused Restarts The Game
+ Chaos Angel Unknown 2 Unused Restarts The Game
+ Chaos Angel Map
+ Chaos Angel Act 1
+ Chaos Angel Act 2
+ Chaos Angel Act 3
+ Chaos Angel Act 4 Unused Restarts The Game
+ Chaos Angel Boss Act
+ Chaos Angel Minigame 1
+ Chaos Angel Minigame 2
+ Altar Emerald Unknown Unused Restarts The Game
+ Altar Emerald Boss Act
+ Nonaggression Boss Act
+ Invaild
+
+
+Character Starting Positions Mini Note It Has 1 Pointer Per Scene
+000D13C8 Null Restarts The Game
+ Sonic Factory
+ Route 99 Map
+ Route 99 Act 1
+ Route 99 Act 2
+ Route 99 Act 3
+ Route 99 Act 4 Unused Restarts The Game
+ Route 99 Boss Act
+ Route 99 Minigame 1
+ Route 99 Minigame 2
+ Sunset Hill Unknown Unused Restarts The Game
+ Chao Playground
+ Sunset Hill Map
+ Sunset Hill Act 1
+ Sunset Hill Act 2
+ Sunset Hill Act 3
+ Sunset Hill Act 4 Unused Restarts The Game
+ Sunset Hill Boss Act
+ Sunset Hill Minigame 1
+ Sunset Hill Minigame 2
+ Ocean Base Unknown 1 Unused Restarts The Game
+ Ocean Base Unknown 2 Unused Restarts The Game
+ Ocean Base Map
+ Ocean Base Act 1
+ Ocean Base Act 2
+ Ocean Base Act 3
+ Ocean Base Act 4 Unused Restarts The Game
+ Ocean Base Boss Act
+ Ocean Base Minigame 1
+ Ocean Base Minigame 2
+ Toy Kingdom Unknown 1 Unused Restarts The Game
+ Toy Kingdom Unknown 2 Unused Restarts The Game
+ Toy Kingdom Map
+ Toy Kingdom Act 1
+ Toy Kingdom Act 2
+ Toy Kingdom Act 3
+ Toy Kingdom Act 4 Unused Restarts The Game
+ Toy Kingdom Boss Act
+ Toy Kingdom Minigame 1
+ Toy Kingdom Minigame 2
+ Twinkle Snow Unknown 1 Unused Restarts The Game
+ Twinkle Snow Unknown 2 Unused Restarts The Game
+ Twinkle Snow Map
+ Twinkle Snow Act 1
+ Twinkle Snow Act 2
+ Twinkle Snow Act 3
+ Twinkle Snow Act 4 Unused Restarts The Game
+ Twinkle Snow Boss Act
+ Twinkle Snow Minigame 1
+ Twinkle Snow Minigame 2
+ Cyber Track Unknown 1 Unused Restarts The Game
+ Cyber Track Unknown 2 Unused Restarts The Game
+ Cyber Track Map
+ Cyber Track Act 1
+ Cyber Track Act 2
+ Cyber Track Act 3
+ Cyber Track Act 4 Unused Restarts The Game
+ Cyber Track Boss Act
+ Cyber Track Minigame 1
+ Cyber Track Minigame 2
+ Chaos Angel Unknown 1 Unused Restarts The Game
+ Chaos Angel Unknown 2 Unused Restarts The Game
+ Chaos Angel Map
+ Chaos Angel Act 1
+ Chaos Angel Act 2
+ Chaos Angel Act 3
+ Chaos Angel Act 4 Unused Restarts The Game
+ Chaos Angel Boss Act
+ Chaos Angel Minigame 1
+ Chaos Angel Minigame 2
+ Altar Emerald Unknown Unused Restarts The Game
+ Altar Emerald Boss Act
+ Nonaggression Boss Act
+ Invaild
+
+
+Interactables Object Layouts Mini Note It Has 1 Pointer Per Scene
+000D0E9C Null Restarts The Game
+ Sonic Factory
+ Route 99 Map
+ Route 99 Act 1
+ Route 99 Act 2
+ Route 99 Act 3
+ Route 99 Act 4 Unused Restarts The Game
+ Route 99 Boss Act
+ Route 99 Minigame 1
+ Route 99 Minigame 2
+ Sunset Hill Unknown Unused Restarts The Game
+ Chao Playground
+ Sunset Hill Map
+ Sunset Hill Act 1
+ Sunset Hill Act 2
+ Sunset Hill Act 3
+ Sunset Hill Act 4 Unused Restarts The Game
+ Sunset Hill Boss Act
+ Sunset Hill Minigame 1
+ Sunset Hill Minigame 2
+ Ocean Base Unknown 1 Unused Restarts The Game
+ Ocean Base Unknown 2 Unused Restarts The Game
+ Ocean Base Map
+ Ocean Base Act 1
+ Ocean Base Act 2
+ Ocean Base Act 3
+ Ocean Base Act 4 Unused Restarts The Game
+ Ocean Base Boss Act
+ Ocean Base Minigame 1
+ Ocean Base Minigame 2
+ Toy Kingdom Unknown 1 Unused Restarts The Game
+ Toy Kingdom Unknown 2 Unused Restarts The Game
+ Toy Kingdom Map
+ Toy Kingdom Act 1
+ Toy Kingdom Act 2
+ Toy Kingdom Act 3
+ Toy Kingdom Act 4 Unused Restarts The Game
+ Toy Kingdom Boss Act
+ Toy Kingdom Minigame 1
+ Toy Kingdom Minigame 2
+ Twinkle Snow Unknown 1 Unused Restarts The Game
+ Twinkle Snow Unknown 2 Unused Restarts The Game
+ Twinkle Snow Map
+ Twinkle Snow Act 1
+ Twinkle Snow Act 2
+ Twinkle Snow Act 3
+ Twinkle Snow Act 4 Unused Restarts The Game
+ Twinkle Snow Boss Act
+ Twinkle Snow Minigame 1
+ Twinkle Snow Minigame 2
+ Cyber Track Unknown 1 Unused Restarts The Game
+ Cyber Track Unknown 2 Unused Restarts The Game
+ Cyber Track Map
+ Cyber Track Act 1
+ Cyber Track Act 2
+ Cyber Track Act 3
+ Cyber Track Act 4 Unused Restarts The Game
+ Cyber Track Boss Act
+ Cyber Track Minigame 1
+ Cyber Track Minigame 2
+ Chaos Angel Unknown 1 Unused Restarts The Game
+ Chaos Angel Unknown 2 Unused Restarts The Game
+ Chaos Angel Map
+ Chaos Angel Act 1
+ Chaos Angel Act 2
+ Chaos Angel Act 3
+ Chaos Angel Act 4 Unused Restarts The Game
+ Chaos Angel Boss Act
+ Chaos Angel Minigame 1
+ Chaos Angel Minigame 2
+ Altar Emerald Unknown Unused Restarts The Game
+ Altar Emerald Boss Act
+ Nonaggression Boss Act
+ Invaild
+
+
+Itemboxes Object Layouts Mini Note It Has 1 Pointer Per Scene
+000D0FC0 Null Restarts The Game
+ Sonic Factory
+ Route 99 Map
+ Route 99 Act 1
+ Route 99 Act 2
+ Route 99 Act 3
+ Route 99 Act 4 Unused Restarts The Game
+ Route 99 Boss Act
+ Route 99 Minigame 1
+ Route 99 Minigame 2
+ Sunset Hill Unknown Unused Restarts The Game
+ Chao Playground
+ Sunset Hill Map
+ Sunset Hill Act 1
+ Sunset Hill Act 2
+ Sunset Hill Act 3
+ Sunset Hill Act 4 Unused Restarts The Game
+ Sunset Hill Boss Act
+ Sunset Hill Minigame 1
+ Sunset Hill Minigame 2
+ Ocean Base Unknown 1 Unused Restarts The Game
+ Ocean Base Unknown 2 Unused Restarts The Game
+ Ocean Base Map
+ Ocean Base Act 1
+ Ocean Base Act 2
+ Ocean Base Act 3
+ Ocean Base Act 4 Unused Restarts The Game
+ Ocean Base Boss Act
+ Ocean Base Minigame 1
+ Ocean Base Minigame 2
+ Toy Kingdom Unknown 1 Unused Restarts The Game
+ Toy Kingdom Unknown 2 Unused Restarts The Game
+ Toy Kingdom Map
+ Toy Kingdom Act 1
+ Toy Kingdom Act 2
+ Toy Kingdom Act 3
+ Toy Kingdom Act 4 Unused Restarts The Game
+ Toy Kingdom Boss Act
+ Toy Kingdom Minigame 1
+ Toy Kingdom Minigame 2
+ Twinkle Snow Unknown 1 Unused Restarts The Game
+ Twinkle Snow Unknown 2 Unused Restarts The Game
+ Twinkle Snow Map
+ Twinkle Snow Act 1
+ Twinkle Snow Act 2
+ Twinkle Snow Act 3
+ Twinkle Snow Act 4 Unused Restarts The Game
+ Twinkle Snow Boss Act
+ Twinkle Snow Minigame 1
+ Twinkle Snow Minigame 2
+ Cyber Track Unknown 1 Unused Restarts The Game
+ Cyber Track Unknown 2 Unused Restarts The Game
+ Cyber Track Map
+ Cyber Track Act 1
+ Cyber Track Act 2
+ Cyber Track Act 3
+ Cyber Track Act 4 Unused Restarts The Game
+ Cyber Track Boss Act
+ Cyber Track Minigame 1
+ Cyber Track Minigame 2
+ Chaos Angel Unknown 1 Unused Restarts The Game
+ Chaos Angel Unknown 2 Unused Restarts The Game
+ Chaos Angel Map
+ Chaos Angel Act 1
+ Chaos Angel Act 2
+ Chaos Angel Act 3
+ Chaos Angel Act 4 Unused Restarts The Game
+ Chaos Angel Boss Act
+ Chaos Angel Minigame 1
+ Chaos Angel Minigame 2
+ Altar Emerald Unknown Unused Restarts The Game
+ Altar Emerald Boss Act
+ Nonaggression Boss Act
+ Invaild
+
+
+Enemies Object Layouts Mini Note It Has 1 Pointer Per Scene
+000D10E4 Null Restarts The Game
+ Sonic Factory
+ Route 99 Map
+ Route 99 Act 1
+ Route 99 Act 2
+ Route 99 Act 3
+ Route 99 Act 4 Unused Restarts The Game
+ Route 99 Boss Act
+ Route 99 Minigame 1
+ Route 99 Minigame 2
+ Sunset Hill Unknown Unused Restarts The Game
+ Chao Playground
+ Sunset Hill Map
+ Sunset Hill Act 1
+ Sunset Hill Act 2
+ Sunset Hill Act 3
+ Sunset Hill Act 4 Unused Restarts The Game
+ Sunset Hill Boss Act
+ Sunset Hill Minigame 1
+ Sunset Hill Minigame 2
+ Ocean Base Unknown 1 Unused Restarts The Game
+ Ocean Base Unknown 2 Unused Restarts The Game
+ Ocean Base Map
+ Ocean Base Act 1
+ Ocean Base Act 2
+ Ocean Base Act 3
+ Ocean Base Act 4 Unused Restarts The Game
+ Ocean Base Boss Act
+ Ocean Base Minigame 1
+ Ocean Base Minigame 2
+ Toy Kingdom Unknown 1 Unused Restarts The Game
+ Toy Kingdom Unknown 2 Unused Restarts The Game
+ Toy Kingdom Map
+ Toy Kingdom Act 1
+ Toy Kingdom Act 2
+ Toy Kingdom Act 3
+ Toy Kingdom Act 4 Unused Restarts The Game
+ Toy Kingdom Boss Act
+ Toy Kingdom Minigame 1
+ Toy Kingdom Minigame 2
+ Twinkle Snow Unknown 1 Unused Restarts The Game
+ Twinkle Snow Unknown 2 Unused Restarts The Game
+ Twinkle Snow Map
+ Twinkle Snow Act 1
+ Twinkle Snow Act 2
+ Twinkle Snow Act 3
+ Twinkle Snow Act 4 Unused Restarts The Game
+ Twinkle Snow Boss Act
+ Twinkle Snow Minigame 1
+ Twinkle Snow Minigame 2
+ Cyber Track Unknown 1 Unused Restarts The Game
+ Cyber Track Unknown 2 Unused Restarts The Game
+ Cyber Track Map
+ Cyber Track Act 1
+ Cyber Track Act 2
+ Cyber Track Act 3
+ Cyber Track Act 4 Unused Restarts The Game
+ Cyber Track Boss Act
+ Cyber Track Minigame 1
+ Cyber Track Minigame 2
+ Chaos Angel Unknown 1 Unused Restarts The Game
+ Chaos Angel Unknown 2 Unused Restarts The Game
+ Chaos Angel Map
+ Chaos Angel Act 1
+ Chaos Angel Act 2
+ Chaos Angel Act 3
+ Chaos Angel Act 4 Unused Restarts The Game
+ Chaos Angel Boss Act
+ Chaos Angel Minigame 1
+ Chaos Angel Minigame 2
+ Altar Emerald Unknown Unused Restarts The Game
+ Altar Emerald Boss Act
+ Nonaggression Boss Act
+ Invaild
+
+
+Rings Object Layouts Mini Note It Has 1 Pointer Per Scene
+000CEBD0 Null Restarts The Game
+ Sonic Factory
+ Route 99 Map
+ Route 99 Act 1
+ Route 99 Act 2
+ Route 99 Act 3
+ Route 99 Act 4 Unused Restarts The Game
+ Route 99 Boss Act
+ Route 99 Minigame 1
+ Route 99 Minigame 2
+ Sunset Hill Unknown Unused Restarts The Game
+ Chao Playground
+ Sunset Hill Map
+ Sunset Hill Act 1
+ Sunset Hill Act 2
+ Sunset Hill Act 3
+ Sunset Hill Act 4 Unused Restarts The Game
+ Sunset Hill Boss Act
+ Sunset Hill Minigame 1
+ Sunset Hill Minigame 2
+ Ocean Base Unknown 1 Unused Restarts The Game
+ Ocean Base Unknown 2 Unused Restarts The Game
+ Ocean Base Map
+ Ocean Base Act 1
+ Ocean Base Act 2
+ Ocean Base Act 3
+ Ocean Base Act 4 Unused Restarts The Game
+ Ocean Base Boss Act
+ Ocean Base Minigame 1
+ Ocean Base Minigame 2
+ Toy Kingdom Unknown 1 Unused Restarts The Game
+ Toy Kingdom Unknown 2 Unused Restarts The Game
+ Toy Kingdom Map
+ Toy Kingdom Act 1
+ Toy Kingdom Act 2
+ Toy Kingdom Act 3
+ Toy Kingdom Act 4 Unused Restarts The Game
+ Toy Kingdom Boss Act
+ Toy Kingdom Minigame 1
+ Toy Kingdom Minigame 2
+ Twinkle Snow Unknown 1 Unused Restarts The Game
+ Twinkle Snow Unknown 2 Unused Restarts The Game
+ Twinkle Snow Map
+ Twinkle Snow Act 1
+ Twinkle Snow Act 2
+ Twinkle Snow Act 3
+ Twinkle Snow Act 4 Unused Restarts The Game
+ Twinkle Snow Boss Act
+ Twinkle Snow Minigame 1
+ Twinkle Snow Minigame 2
+ Cyber Track Unknown 1 Unused Restarts The Game
+ Cyber Track Unknown 2 Unused Restarts The Game
+ Cyber Track Map
+ Cyber Track Act 1
+ Cyber Track Act 2
+ Cyber Track Act 3
+ Cyber Track Act 4 Unused Restarts The Game
+ Cyber Track Boss Act
+ Cyber Track Minigame 1
+ Cyber Track Minigame 2
+ Chaos Angel Unknown 1 Unused Restarts The Game
+ Chaos Angel Unknown 2 Unused Restarts The Game
+ Chaos Angel Map
+ Chaos Angel Act 1
+ Chaos Angel Act 2
+ Chaos Angel Act 3
+ Chaos Angel Act 4 Unused Restarts The Game
+ Chaos Angel Boss Act
+ Chaos Angel Minigame 1
+ Chaos Angel Minigame 2
+ Altar Emerald Unknown Unused Restarts The Game
+ Altar Emerald Boss Act
+ Nonaggression Boss Act
+ Invaild
+
+
+Level Pointers
+
+Locations Mini Note 1 Byte Per Scene
+000D6B80 Null Restarts The Game
+ Sonic Factory
+ Route 99 Map
+ Route 99 Act 1
+ Route 99 Act 2
+ Route 99 Act 3
+ Route 99 Act 4 Unused Restarts The Game
+ Route 99 Boss Act
+ Route 99 Minigame 1
+ Route 99 Minigame 2
+ Sunset Hill Unknown Unused Restarts The Game
+ Chao Playground
+ Sunset Hill Map
+ Sunset Hill Act 1
+ Sunset Hill Act 2
+ Sunset Hill Act 3
+ Sunset Hill Act 4 Unused Restarts The Game
+ Sunset Hill Boss Act
+ Sunset Hill Minigame 1
+ Sunset Hill Minigame 2
+ Ocean Base Unknown 1 Unused Restarts The Game
+ Ocean Base Unknown 2 Unused Restarts The Game
+ Ocean Base Map
+ Ocean Base Act 1
+ Ocean Base Act 2
+ Ocean Base Act 3
+ Ocean Base Act 4 Unused Restarts The Game
+ Ocean Base Boss Act
+ Ocean Base Minigame 1
+ Ocean Base Minigame 2
+ Toy Kingdom Unknown 1 Unused Restarts The Game
+ Toy Kingdom Unknown 2 Unused Restarts The Game
+ Toy Kingdom Map
+ Toy Kingdom Act 1
+ Toy Kingdom Act 2
+ Toy Kingdom Act 3
+ Toy Kingdom Act 4 Unused Restarts The Game
+ Toy Kingdom Boss Act
+ Toy Kingdom Minigame 1
+ Toy Kingdom Minigame 2
+ Twinkle Snow Unknown 1 Unused Restarts The Game
+ Twinkle Snow Unknown 2 Unused Restarts The Game
+ Twinkle Snow Map
+ Twinkle Snow Act 1
+ Twinkle Snow Act 2
+ Twinkle Snow Act 3
+ Twinkle Snow Act 4 Unused Restarts The Game
+ Twinkle Snow Boss Act
+ Twinkle Snow Minigame 1
+ Twinkle Snow Minigame 2
+ Cyber Track Unknown 1 Unused Restarts The Game
+ Cyber Track Unknown 2 Unused Restarts The Game
+ Cyber Track Map
+ Cyber Track Act 1
+ Cyber Track Act 2
+ Cyber Track Act 3
+ Cyber Track Act 4 Unused Restarts The Game
+ Cyber Track Boss Act
+ Cyber Track Minigame 1
+ Cyber Track Minigame 2
+ Chaos Angel Unknown 1 Unused Restarts The Game
+ Chaos Angel Unknown 2 Unused Restarts The Game
+ Chaos Angel Map
+ Chaos Angel Act 1
+ Chaos Angel Act 2
+ Chaos Angel Act 3
+ Chaos Angel Act 4 Unused Restarts The Game
+ Chaos Angel Boss Act
+ Chaos Angel Minigame 1
+ Chaos Angel Minigame 2
+ Altar Emerald Unknown Unused Restarts The Game
+ Altar Emerald Boss Act
+ Nonaggression Boss Act
+ Invaild
+Pointer
+0008E724
+
+
+Normal Zones Playlist
+
+Locations Mini Note 1 Byte Per Act
+000CE1A4 Route 99 Map
+000CE1A5 Route 99 Act 1
+000CE1A6 Route 99 Act 2
+000CE1A7 Route 99 Act 3
+000CE1A8 Sunset Hill Map
+000CE1A9 Sunset Hill Act 1
+000CE1AA Sunset Hill Act 2
+000CE1AB Sunset Hill Act 3
+000CE1AC Ocean Base Map
+000CE1AD Ocean Base Act 1
+000CE1AE Ocean Base Act 2
+000CE1AF Ocean Base Act 3
+000CE1B0 Toy Kingdom Map
+000CE1B1 Toy Kingdom Act 1
+000CE1B2 Toy Kingdom Act 2
+000CE1B3 Toy Kingdom Act 3
+000CE1B4 Twinkle Snow Map
+000CE1B5 Twinkle Snow Act 1
+000CE1B6 Twinkle Snow Act 2
+000CE1B7 Twinkle Snow Act 3
+000CE1B8 Cyber Track Map
+000CE1B9 Cyber Track Act 1
+000CE1BA Cyber Track Act 2
+000CE1BB Cyber Track Act 3
+000CE1BC Chaos Angel Map
+000CE1BD Chaos Angel Act 1
+000CE1BE Chaos Angel Act 2
+000CE1BF Chaos Angel Act 3
+Pointer
+00002638
+
+
+Music
+
+Sound Pointer List And Music Structure Mini Note The Locations Are Music Structure And The Pointers Are Sound Pointer List
+MUSIC
+
+0000 Opening
+2646CC Location
+000EB420 Pointer
+
+0001 Title
+264A9C Location
+ Pointer
+
+0002 Main Menu
+2653C0 Location
+ Pointer
+
+0003 Select your characters
+266084 Location
+ Pointer
+
+0004 Sonic Factory
+266C20 Location
+ Pointer
+
+0005 Options screen
+267278 Location
+ Pointer
+
+0006 Options screen (?)
+2678BC Location
+ Pointer
+
+0007 Chao's Playground
+268058 Location
+ Pointer
+
+0008 Beginning Demo
+268EF8 Location
+ Pointer
+
+0009 Null
+ECE08 Location
+ Pointer
+
+000A Zone 1: Map
+269BB8 Location
+ Pointer
+
+000B Zone 2: Map
+26A724 Location
+ Pointer
+
+000C Zone 3: Map
+26B1A8 Location
+ Pointer
+
+000D Zone 4: Map
+26B728 Location
+ Pointer
+
+000E Zone 5: Map
+26BB80 Location
+ Pointer
+
+000F Zone 6: Map
+26C63C Location
+ Pointer
+
+0010 Zone 7: Map
+26CBCC Location
+ Pointer
+
+0011 Altar Emerald
+26D814 Location
+ Pointer
+
+0012 Intact Music 1 Mini Note This Was Probably For A Unused Hub Maybe
+26E20C Location
+ Pointer
+
+0013 Null
+ECE08 Location
+ Pointer
+
+0014 Z1A1
+26F738 Location
+ Pointer
+
+0015 Z1A2
+270D1C Location
+ Pointer
+
+0016 Z1A3
+2721C8 Location
+ Pointer
+
+0017 Null Mini Note This Was Probably For The Unused Act 4
+ECE08 Location
+ Pointer
+
+0018 Z2A1
+2731B8 Location
+ Pointer
+
+0019 Z2A2
+2742C0 Location
+ Pointer
+
+001A Z2A3
+275718 Location
+ Pointer
+
+001B Null Mini Note This Was Probably For The Unused Act 4
+ECE08 Location
+ Pointer
+
+001C Z3A1
+276EF8 Location
+ Pointer
+
+001D Z3A2
+2781AC Location
+ Pointer
+
+001E Z3A3
+27938C Location
+ Pointer
+
+001F Null Mini Note This Was Probably For The Unused Act 4
+ECE08 Location
+ Pointer
+
+0020 Z4A1
+27B5D4 Location
+ Pointer
+
+0021 Z4A2
+27D5F0 Location
+ Pointer
+
+0022 Z4A3
+27F41C Location
+ Pointer
+
+0023 Null Mini Note This Was Probably For The Unused Act 4
+ECE08 Location
+ Pointer
+
+0024 Z5A1
+280690 Location
+ Pointer
+
+0025 Z5A2
+281F5C Location
+ Pointer
+
+0026 Z5A3
+2833E8 Location
+ Pointer
+
+0027 Null Mini Note This Was Probably For The Unused Act 4
+ECE08 Location
+ Pointer
+
+0028 Z6A1
+28491C Location
+ Pointer
+
+0029 Z6A2
+286404 Location
+ Pointer
+
+002A Z6A3
+287C64 Location
+ Pointer
+
+002B Null Mini Note This Was Probably For The Unused Act 4
+ECE08 Location
+ Pointer
+
+002C Z7A1
+289C64 Location
+ Pointer
+
+002D Z7A2
+28AD70 Location
+ Pointer
+
+002E Z7A3
+28D104 Location
+ Pointer
+
+002F Null Mini Note This Was Probably For The Unused Act 4
+ECE08 Location
+ Pointer
+
+0030 Null
+ECE08 Location
+ Pointer
+
+0031 Null
+ECE08 Location
+ Pointer
+
+0032 Boss
+28E234 Location
+ Pointer
+
+0033 Boss-Pinch
+28F4AC Location
+ Pointer
+
+0034 7-Boss
+2912CC Location
+ Pointer
+
+0035 7-Boss-Pinch
+291F28 Location
+ Pointer
+
+0036 Final-Boss
+293B08 Location
+ Pointer
+
+0037 Final-Boss-Pinch
+295138 Location
+ Pointer
+
+0038 EX-Boss
+296FCC Location
+ Pointer
+
+0039 EX-Boss-Pinch
+297550 Location
+ Pointer
+
+003A Intact-Music 2 Mini Note Don.t Know What This Was For
+298B28 Location
+ Pointer
+
+003B Demo
+299660 Location
+ Pointer
+
+003C EX-Demo 1
+29ACD0 Location
+ Pointer
+
+003D EX-Demo 2
+29C3B0 Location
+ Pointer
+
+003E Ending-sequence A
+29CD3C Location
+ Pointer
+
+003F Ending-sequence B
+29E7E4 Location
+ Pointer
+
+0040 Credits
+29F934 Location
+ Pointer
+
+0041 Special-Stage
+2A0AA8 Location
+ Pointer
+
+0042 Special Stage - Got an Emerald
+2A0EE0 Location
+ Pointer
+
+0043 Special Stage - Failed
+2A10E8 Location
+ Pointer
+
+0044 Connection check
+2A18D8 Location
+ Pointer
+
+0045 (VS mode)
+2A2550 Location
+ Pointer
+
+0046 (VS mode)
+2A2DFC Location
+ Pointer
+
+0047 -
+2A3AC8 Location
+ Pointer
+
+0048 -
+2A43D0 Location
+ Pointer
+
+0049 Invincibility
+2A4BDC Location
+ Pointer
+
+004A Null
+ECE08 Location
+ Pointer
+
+004B Countdown
+2A4D9C Location
+ Pointer
+
+004C Bonus-Stage
+2A61AC Location
+ Pointer
+
+004D Null
+ECE08 Location
+ Pointer
+
+004E ???
+2A8140 Location
+ Pointer
+
+004F Ending sequence EX
+2AC0BC Location
+ Pointer
+
+0050 Null
+ECE08 Location
+ Pointer
+
+0051 Emerald
+2AC23C Location
+ Pointer
+
+0052 Game Over
+2AC408 Location
+ Pointer
+
+0053 Extra life
+2AC528 Location
+ Pointer
+
+0054 Act result - golden medal
+2AC688 Location
+ Pointer
+
+0055 Act result
+2AC790 Location
+ Pointer
+
+0056 Boss result - golden medal
+2ACFC4 Location
+ Pointer
+
+0057 Boss result
+2AD5FC Location
+ Pointer
+
+0058 Result - Altar Emerald
+2AD834 Location
+ Pointer
+
+0059 Result - Nonaggression
+2ADC08 Location
+ Pointer
+
+005A Null
+ECE08 Location
+ Pointer
+
+005B Message after credits
+2ADF1C Location
+ Pointer
+
+005C Special Stage - complete
+2AE14C Location
+ Pointer
+
+005D Null
+ECE08 Location
+ Pointer
+
+005E Null
+ECE08 Location
+ Pointer
+
+005F Time Attack result
+2AE2E8 Location
+ Pointer
+
+0060 Time Attack result - new record
+2AE684 Location
+ Pointer
+
+0061 (VS mode)
+2AEA08 Location
+ Pointer
+
+0062 (VS mode)
+2AEAA0 Location
+ Pointer
+
+0063 (VS mode)
+2AEB74 Location
+ Pointer
+
+0064 (VS mode)
+2AEBF4 Location
+ Pointer
+
+SFX
+0065 Null
+ECE08 Location
+EB748 Pointer
+
+0066 Ring
+2AEC1C Location
+EB750 Pointer
+
+
+Hidden Level Select Menu?
+
+Text
+
+Locations
+000D6B98 Text 1: SELECT STAGE
+000D6BA8 Text 2: ZONE %d ACT %d
+000D6BB8 Text 3: PRESS A BTN
+000D6BC4 Text 4: PLEASE WAIT
+Pointers
+0008E8E8 Pointer To Text 1
+0008E8F0 Pointer To Text 2
+0008E8F4 Pointer To Text 3
+0008E928 Pointer To Text 4
+
+
+Special Stages
+
+Rings for checkpoints Mini Note 2 Bytes Per Special Stage
+000DBAF6 
+
+
+Here are Links to the Websites where some of the info that others made came from for the Rom Map
+https://info.sonicretro.org/Sonic_Advance_3/Technical_information
+https://info.sonicretro.org/Sonic_Advance_3/Technical_information/ROM_Editing
+https://info.sonicretro.org/Sonic_Advance_3/Technical_information/ROM_Editing/Sound_and_Music_List
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Sonic Advance 3 Ram Map
+
+030015EA Character Player 1 Id
+00 Sonic
+01 Cream
+02 Tails
+03 Knuckles
+04 Amy
+05+ Invaild
+
+
+0300173A Character Player 2 Id
+00 Sonic
+01 Cream
+02 Tails
+03 Knuckles
+04 Amy
+05+ Invaild
+
+
+0300094C Rings Id
+0000 0 Rings
+00FF 255 Rings
+03E7 999 Rings
+
+
+03000954 Lives Id
+00 0 Lives
+01 1 Lives
+02 2 Lives
+03 3 Lives
+04 4 Lives
+05 5 Lives
+06 6 Lives
+07 7 Lives
+08 8 Lives
+09 9 Lives
+0A 10 Lives
+63 99 Lives
+
+
+030015EB Character Flag Player 1 Id
+00 
+
+
+0300173B Character Flag Player 2 Id
+00 
+
+
+030015F0 Character State 1 Player 1 Id
+0000 
+
+
+03001740 Character State 1 Player 2 Id
+0000 
+
+
+030015F2 Character State 2 Player 1 Id
+0000 
+
+
+03001742 Character State 2 Player 2 Id
+0000 
+
+
+030015F4 Sprite State 1 Id
+0000
+
+
+03001744 Sprite State 2 Id
+0000
+
+
+03001612 Time Until Going Into "Wait State" 1 Id
+0000
+
+
+03001762 Time Until Going Into "Wait State" 2 Id
+0000
+
+
+0300094E Timer Id (Units In 1/100th Of A Second)
+0000
+
+
+030008B4 Button Flag - A Id
+0000
+
+
+030008B6 Button Flag - B Id
+0000
+
+
+030008B8 Button Flag - R Id
+0000
+
+
+03001D38 Pos X Id (horizontal)
+00000000 0 X
+
+
+03001D3C Pos Y Id (vertical)
+00000000 0 Y
+
+
+030008C8 Restarting Position X Id
+00000000 0 X
+
+
+030008CC Restarting Position Y Id
+00000000 0 Y
+
+
+030015C6 Gravity Flag Id
+00 Normal Gravity
+01 Reverse Gravity
+02+ Same As Before
+
+
+03000540 Characters Unlocked Flag Id
+00 Sonic Locked Cream Locked Tails Locked Knuckles Locked Amy Locked/No Characters Unlocked This is Unused
+01 Sonic Unlocked Cream Locked Tails Locked Knuckles Locked Amy Locked This is Unused
+02 Sonic Locked Cream Unlocked Tails Locked Knuckles Locked Amy Locked This is Unused
+03 Sonic Unlocked Cream Unlocked Tails Locked Knuckles Locked Amy Locked This is Unused
+04 Sonic Locked Cream Locked Tails Unlocked Knuckles Locked Amy Locked This is Unused
+05 Sonic Unlocked Cream Locked Tails Unlocked Knuckles Locked Amy Locked
+06 Sonic Locked Cream Unlocked Tails Unlocked Knuckles Locked Amy Locked This is Unused
+07 Sonic Unlocked Cream Unlocked Tails Unlocked Knuckles Locked Amy Locked
+08 Sonic Locked Cream Locked Tails Locked Knuckles Unlocked Amy Locked This is Unused
+09 Sonic Unlocked Cream Locked Tails Locked Knuckles Unlocked Amy Locked This is Unused
+0A Sonic Locked Cream Unlocked Tails Locked Knuckles Unlocked Amy Locked This is Unused
+0B Sonic Unlocked Cream Unlocked Tails Locked Knuckles Unlocked Amy Locked
+0C Sonic Locked Cream Locked Tails Unlocked Knuckles Unlocked Amy Locked This is Unused
+0D Sonic Unlocked Cream Locked Tails Unlocked Knuckles Unlocked Amy Locked
+0E Sonic Locked Cream Unlocked Tails Unlocked Knuckles Unlocked Amy Locked This is Unused
+0F Sonic Unlocked Cream Unlocked Tails Unlocked Knuckles Unlocked Amy Locked
+10 Sonic Locked Cream Locked Tails Locked Knuckles Locked Amy Unlocked/This is Unused
+11 Sonic Unlocked Cream Locked Tails Locked Knuckles Locked Amy Unlocked This is Unused
+12 Sonic Locked Cream Unlocked Tails Locked Knuckles Locked Amy Unlocked This is Unused
+13 Sonic Unlocked Cream Unlocked Tails Locked Knuckles Locked Amy Unlocked This is Unused
+14 Sonic Locked Cream Locked Tails Unlocked Knuckles Locked Amy Unlocked This is Unused
+15 Sonic Unlocked Cream Locked Tails Unlocked Knuckles Locked Amy Unlocked
+16 Sonic Locked Cream Unlocked Tails Unlocked Knuckles Locked Amy Unlocked This is Unused
+17 Sonic Unlocked Cream Unlocked Tails Unlocked Knuckles Locked Amy Unlocked
+18 Sonic Locked Cream Locked Tails Locked Knuckles Unlocked Amy Unlocked This is Unused
+19 Sonic Unlocked Cream Locked Tails Locked Knuckles Unlocked Amy Unlocked This is Unused
+1A Sonic Locked Cream Unlocked Tails Locked Knuckles Unlocked Amy Unlocked This is Unused
+1B Sonic Unlocked Cream Unlocked Tails Locked Knuckles Unlocked Amy Unlocked
+1C Sonic Locked Cream Locked Tails Unlocked Knuckles Unlocked Amy Unlocked This is Unused
+1D Sonic Unlocked Cream Locked Tails Unlocked Knuckles Unlocked Amy Unlocked
+1E Sonic Locked Cream Unlocked Tails Unlocked Knuckles Unlocked Amy Unlocked This is Unused
+1F Sonic Unlocked Cream Unlocked Tails Unlocked Knuckles Unlocked Amy Unlocked/All Characters Unlocked
+20+ Same As Before
+
+
+03000541 Zone Access Flag Id
+00 Route 99 Zone Unlocked/No Zones Unlocked
+01 Route 99 Zone Unlocked/No Zones Unlocked?
+02 Sunset Hill Zone Unlocked
+03 Ocean Base Zone Unlocked
+04 Toy Kingdom Zone Unlocked
+05 Twinkle Snow Zone Unlocked
+06 Cyber Track Zone Unlocked
+07 Chaos Angel Zone Unlocked
+08 Altar Emerald Zone Unlocked
+09 Nonaggression Zone Unlocked/All Zones Unlocked
+0A+ Invaild
+
+
+03000559 Zone Completion Flags Id (1 byte per zone)
+00000000000000 No Acts Completed In Any Zones
+0F000000000000 All Acts Completed In Route 99
+000F0000000000 All Acts Completed In Sunset Hill
+00000F00000000 All Acts Completed In Ocean Base
+0000000F000000 All Acts Completed In Toy Kingdom
+000000000F0000 All Acts Completed In Twinkle Snow
+00000000000F00 All Acts Completed In Cyber Track
+0000000000000F All Acts Completed In Chaos Angel
+0F0F0F0F0F0F0F All Acts Completed In All Zones
+
+
+03000544 Chao Found Id (2 Bytes Per Zone)
+0000000000000000000000000000 No Chao Found In All Zones
+FF03FF03FF03FF03FF03FF03FF03 All Chao Found In All Zones
+
+
+03000552 Special Keys Id (1 byte Per Zone)
+00000000000000 No Keys In All Zones
+01000000000000 Route 99 1 Key
+00010000000000 Sunset Hill 1 Key
+00000100000000 Ocean Base 1 Key
+00000001000000 Toy Kingdom 1 Key
+00000000010000 Twinkle Snow 1 Key
+00000000000100 Cyber Track 1 Key
+00000000000001 Chaos Angel 1 Key
+01010101010101 1 Key In All Zones
+09000000000000 Route 99 9 Keys
+00090000000000 Sunset Hill 9 Keys
+00000900000000 Ocean Base 9 Keys
+00000009000000 Toy Kingdom 9 Keys
+00000000090000 Twinkle Snow 9 Keys
+00000000000900 Cyber Track 9 Keys
+00000000000009 Chaos Angel 9 Keys
+09090909090909 9 Keys In All Zones
+
+
+03000927 Special Key Flag Id
+00 Got No Special Key
+01 Got A Special Key
+02+ Same As 00
+
+
+03000562 Chaos Emeralds Flag Id
+00 No Emeralds
+7F All Emeralds
+
+
+03003FBE Language Id 1
+00 Japanese
+01 English
+02 German
+03 French
+04 Spanish
+05 Italian
+06+ Invaild
+
+
+03004530 Language Id 2
+00 Japanese
+01 English
+02 German
+03 French
+04 Spanish
+05 Italian
+06+ Invaild
+
+
+030008A0 Language Id 3
+00 Japanese
+01 English
+02 German
+03 French
+04 Spanish
+05 Italian
+06+ Invaild
+
+
+030008A3 Game Mode Id
+00 Story Mode
+01 Demo Mode
+02 Credits Demo Mode
+03 Time Attack Mode
+04 Boss Attack Mode
+05 MultiPlayer Story Mode
+06 MultiPlayer Team Race Mode
+07 MultiPlayer Find Chao Mode
+08+ Invaild
+
+
+030008A9 Zone Id
+00 Zone 01 Route 99
+01 Zone 02 Sunset Hill
+02 Zone 03 Ocean Base
+03 Zone 04 Toy Kingdom
+04 Zone 05 Twinkle Snow
+05 Zone 06 Cyber Track
+06 Zone 07 Chaos Angel
+07 Zone 08 Altar Emerald
+08 Zone 09 Nonaggression
+09+ Invaild
+
+
+030008AA Act Id
+00 Act Unknown
+01 Act Sonic Factory
+02 Act Map
+03 Act 1
+04 Act 2
+05 Act 3
+06 Act 4 Unused
+07 Act Boss
+08 Act Minigame 1
+09 Act Minigame 2
+0A Act Special Stage
+0B+ Invaild
+
+
+030008AE Scene Id
+00 Null Restarts The Game
+01 Sonic Factory
+02 Route 99 Map
+03 Route 99 Act 1
+04 Route 99 Act 2
+05 Route 99 Act 3
+06 Route 99 Act 4 Unused Restarts The Game
+07 Route 99 Boss Act
+08 Route 99 Minigame 1
+09 Route 99 Minigame 2
+0A Sunset Hill Unknown Restarts The Game
+0B Chao Playground
+0C Sunset Hill Map
+0D Sunset Hill Act 1
+0E Sunset Hill Act 2
+0F Sunset Hill Act 3
+10 Sunset Hill Act 4 Unused Restarts The Game
+11 Sunset Hill Boss Act
+12 Sunset Hill Minigame 1
+13 Sunset Hill Minigame 2
+14 Ocean Base Unknown Restarts The Game
+15 Ocean Base Unknown Restarts The Game
+16 Ocean Base Map
+17 Ocean Base Act 1
+18 Ocean Base Act 2
+19 Ocean Base Act 3
+1A Ocean Base Act 4 Unused Restarts The Game
+1B Ocean Base Boss Act
+1C Ocean Base Minigame 1
+1D Ocean Base Minigame 2
+1E Toy Kingdom Unknown Restarts The Game
+1F Toy Kingdom Unknown Restarts The Game
+20 Toy Kingdom Map
+21 Toy Kingdom Act 1
+22 Toy Kingdom Act 2
+23 Toy Kingdom Act 3
+24 Toy Kingdom Act 4 Unused Restarts The Game
+25 Toy Kingdom Boss Act
+26 Toy Kingdom Minigame 1
+27 Toy Kingdom Minigame 2
+28 Twinkle Snow Unknown Restarts The Game
+29 Twinkle Snow Unknown Restarts The Game
+2A Twinkle Snow Map
+2B Twinkle Snow Act 1
+2C Twinkle Snow Act 2
+2D Twinkle Snow Act 3
+2E Twinkle Snow Act 4 Unused Restarts The Game
+2F Twinkle Snow Boss Act
+30 Twinkle Snow Minigame 1
+31 Twinkle Snow Minigame 2
+32 Cyber Track Unknown Restarts The Game
+33 Cyber Track Unknown Restarts The Game
+34 Cyber Track Map
+35 Cyber Track Act 1
+36 Cyber Track Act 2
+37 Cyber Track Act 3
+38 Cyber Track Act 4 Unused Restarts The Game
+39 Cyber Track Boss Act
+3A Cyber Track Minigame 1
+3B Cyber Track Minigame 2
+3C Chaos Angel Unknown Restarts The Game
+3D Chaos Angel Unknown Restarts The Game
+3E Chaos Angel Map
+3F Chaos Angel Act 1
+40 Chaos Angel Act 2
+41 Chaos Angel Act 3
+42 Chaos Angel Act 4 Unused Restarts The Game
+43 Chaos Angel Boss Act
+44 Chaos Angel Minigame 1
+45 Chaos Angel Minigame 2
+46 Altar Emerald Unknown Restarts The Game
+47 Altar Emerald
+48 Nonaggression
+49 Sunset Hill 2P Map? Maybe
+4A+ Invaild
+
+
+03004532 Zone Title On Map Id
+00 Route 99
+01 Sunset Hill
+02 Ocean Base
+03 Toy Kingdom
+04 Twinkle Snow
+05 Cyber Track
+06 Chaos Angel
+07+ Invaild
+
+
+0300487B Special Stage Id
+00 Route 99 Stage
+01 Sunset Hill Stage
+02 Ocean Base Stage
+03 Toy Kingdom Stage
+04 Twinkle Snow Stage
+05 Cyber Track Stage
+06 Chaos Angel Stage
+07+ Invaild
+
+
+030047A7 Time Attack Zone Id 1
+00 Zone 01 Route 99
+01 Zone 02 Sunset Hill
+02 Zone 03 Ocean Base
+03 Zone 04 Toy Kingdom
+04 Zone 05 Twinkle Snow
+05 Zone 06 Cyber Track
+06 Zone 07 Chaos Angel
+07 Zone 08 Altar Emerald Mini Note Unused
+08 Zone 09 Nonaggression Mini Note Unused
+09+ Invaild
+
+
+030043C7 Time Attack Zone Id 2?
+00 Zone 01 Route 99
+01 Zone 02 Sunset Hill
+02 Zone 03 Ocean Base
+03 Zone 04 Toy Kingdom
+04 Zone 05 Twinkle Snow
+05 Zone 06 Cyber Track
+06 Zone 07 Chaos Angel
+07 Zone 08 Altar Emerald Mini Note Unused
+08 Zone 09 Nonaggression Mini Note Unused
+09+ Invaild
+
+
+030047A6 Time Attack Act Id 1
+00 Act 1
+01 Act 2
+02 Act 3
+03 Act 4 Mini Note Unused
+04+ Invaild
+
+
+030043C6 Time Attack Act Id 2?
+00 Act 1
+01 Act 2
+02 Act 3
+03 Act 4 Mini Note Unused
+04+ Invaild
+
+
+03004874 Rings In Special Stage Id
+0000 0 Rings
+00FF 255 Rings
+03E7 999 Rings
+
+Here are Links to the Websites where some of the Info that Others made came from for the Ram Map
+https://info.sonicretro.org/Sonic_Advance_3/Technical_information/RAM_Editing
+https://info.sonicretro.org/Sonic_Advance_3/Hidden_content
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Sonic Advance 3 Sram Map
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Sonic Advance 3 Misc Things
+
+Here are Links to Misc Websites that help me make this document with there help from Others with there Misc Sonic Advance 3 Rom Documenting info on these Web Pages
+https://info.sonicretro.org/Sonic_Advance_3/Hidden_content
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Credits
+
+Gdmc5
+Erik JS
+JaceCear
+And all the Others who worked on the Sonic Advance 3 Technical Information Pages on the Sonic Retro Wiki :3
