@@ -1,9 +1,6 @@
 # Gdmc5-Archive_of_Old_Projects
-This Repository contains my Old and Cancelled Projects of my Main non Fan Projects and Fan Projects ^w^
-Note this Repo will get updates over time with More Old Cancelled Non Fan Projects and Old Cancelled Fan Projects of my
-Also here are some Videos to showcase some of the Old Cancelled Projects
+This Repository contains my Old and Cancelled Projects of my Main non Fan Projects and Fan Projects and Side Projects and in the future old Non Cancelled Main Projects and Fan Projects and Side Projects ^w^ Note this Repo will get updates over time with More Old Cancelled Non Fan Projects and Old Cancelled Fan Projects and Old Cancelled Side Projects and Old Non Cancelled Projects Main Ones, Fan Ones, Side Ones, of my. Also here are some Videos to showcase some of the Old Cancelled Projects and Old Non Cancelled Projects in the future
 Sonic 2 Test Hack https://youtu.be/UcP0vpl05Hc
 Sonic Advance 3 Test Hack/SADV3TH https://youtu.be/7ES_YgYFZho
-And Please Credit me when using the Source Code of my Non Fan Projects and Fan Projects inside of this Repo when it is
-added in the future sometime. And outside of this Repo Credit me aswell and when making videos about these Projects
-Post Links to this Repository and Give Credit to the People who made the Projects with me aswell -Gdmc5
+Multiple Sonic Fan Projects https://youtu.be/TjVtV8Bx8bU
+Also the Sonic Advance 3 Data Map inside of the Documents Folder that is a extra is unfinshed because I never got around to working on it Enough for Version 00.1 to be released so I released Version 00.0 hope you have fun with it. And also Please Credit me when using the Source Code of my Non Fan Projects and Fan Projects inside of this Repo. And outside of this Repo Credit me aswell and when making videos about these Projects Post Links to this Repository and Give Credit to the People who made the Projects with me aswell -Gdmc5
